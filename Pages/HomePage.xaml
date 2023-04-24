@@ -36,7 +36,18 @@
                     <Grid Margin="-97,-137,-97,-138">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,16,0,0"/>
                         <TextBlock Text="Some Cool Game :3" FontWeight="Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                        <Button x:Name="PlayButton" Width="177" Height="36" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayButton_Click">
+                        <Button x:Name="PlayCoolGameButton" Width="177" Height="36" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayCoolGameButton_Click">
+                            <Grid Margin="-89,-18,-88,-18">
+                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </Button>
+                    </Grid>
+                </Button>
+                <Button Height="275" Width="194" Margin="224,235,0,0" VerticalAlignment="Top" Click="CoolGameInfo_Click">
+                    <Grid Margin="-97,-137,-97,-138">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,16,0,0"/>
+                        <TextBlock Text="WinSimulator" FontWeight="Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <Button x:Name="PlayWinSimulatorButton" Width="177" Height="36" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayWinSimulatorButton_Click">
                             <Grid Margin="-89,-18,-88,-18">
                                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Grid>

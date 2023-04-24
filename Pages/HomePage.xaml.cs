@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Enumeration;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -34,9 +35,31 @@ namespace UWPBlox.Pages
         {
             this.Frame.Navigate(typeof(CoolGameInfo));
         }
-        private void PlayButton_Click(object sender, RoutedEventArgs e)
+        private void PlayCoolGameButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(JoiningServerPage));
+
+            JoiningServerPage JoinServerPage = Frame.Content as JoiningServerPage;
+            if (JoinServerPage != null)
+            {
+                FontIcon GameIcon = JoinServerPage.FindName("GameIcon") as FontIcon;
+                TextBlock GameName = JoinServerPage.FindName("GameName") as TextBlock;
+                GameName.Text = "Some Cool Game :3";
+                GameIcon.Glyph = "\uE7FC";
+            }
+        }
+        private void PlayWinSimulatorButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(JoiningServerPage));
+
+            JoiningServerPage JoinServerPage = Frame.Content as JoiningServerPage;
+            if(JoinServerPage != null)
+            {
+                FontIcon GameIcon = JoinServerPage.FindName("GameIcon") as FontIcon;
+                TextBlock GameName = JoinServerPage.FindName("GameName") as TextBlock;
+                GameName.Text = "WinSimulator";
+                GameIcon.Glyph = "\uEC4E";
+            }
         }
     }
 }
