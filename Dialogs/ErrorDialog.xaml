@@ -1,0 +1,51 @@
+﻿<ContentDialog
+    x:Class="UWPBlox.Dialogs.ErrorDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPBlox.Dialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Style="{StaticResource DefaultContentDialogStyle}"
+    mc:Ignorable="d">
+
+    <ContentDialog.Resources>
+        <ResourceDictionary>
+            <x:Double x:Key="ContentDialogMaxWidth">1100</x:Double>
+            <Thickness x:Key="ContentDialogPadding">0</Thickness>
+        </ResourceDictionary>
+    </ContentDialog.Resources>
+
+    <Grid
+			x:Name="ContainerGrid"
+		    Width="440"
+			Height="500"
+			HorizontalAlignment="Stretch"
+			VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEA39;" HorizontalAlignment="Left" VerticalAlignment="Center" Height="44" Width="44"/>
+            <TextBlock
+					HorizontalAlignment="Left"
+					VerticalAlignment="Center"
+					FontWeight="SemiBold"
+					Text="Error" Margin="49,0,0,0"/>
+            <Button
+					x:Name="CloseDialogButton"
+					Width="44"
+					Height="44"
+					AutomationProperties.Name="Close"
+					Background="Transparent"
+					BorderBrush="Transparent"
+					Click="CloseDialogButton_Click"
+					ToolTipService.ToolTip="Close" Margin="396,0,0,0">
+                <FontIcon FontSize="12" Glyph="&#xE8BB;"/>
+            </Button>
+        </Grid>
+        <TextBlock Text="You can't join the game for now." HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <Button x:Name="OKButton" Content="OK" Margin="387,414,0,0" Grid.Row="1" VerticalAlignment="Top" Style="{StaticResource AccentButtonStyle}" Click="OKButton_Click" Height="32"/>
+    </Grid>
+</ContentDialog>
