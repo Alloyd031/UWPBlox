@@ -134,8 +134,8 @@
     <Compile Include="Pages\ConnectPage.xaml.cs">
       <DependentUpon>ConnectPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\CoolGameInfo.xaml.cs">
-      <DependentUpon>CoolGameInfo.xaml</DependentUpon>
+    <Compile Include="Pages\GameInfo.xaml.cs">
+      <DependentUpon>GameInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\DiscoverPage.xaml.cs">
       <DependentUpon>DiscoverPage.xaml</DependentUpon>
@@ -148,9 +148,6 @@
     </Compile>
     <Compile Include="Pages\MorePage.xaml.cs">
       <DependentUpon>MorePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\WinSimulatorInfo.xaml.cs">
-      <DependentUpon>WinSimulatorInfo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -194,7 +191,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\CoolGameInfo.xaml">
+    <Page Include="Pages\GameInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -211,10 +208,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\MorePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\WinSimulatorInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -20,9 +20,9 @@ namespace UWPBlox.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class CoolGameInfo : Page
+    public sealed partial class GameInfo : Page
     {
-        public CoolGameInfo()
+        public GameInfo()
         {
             this.InitializeComponent();
         }

@@ -31,10 +31,6 @@ namespace UWPBlox.Pages
         {
             this.Frame.Navigate(typeof(AddFriendsPage));
         }
-        private void CoolGameInfo_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(CoolGameInfo));
-        }
         private void PlayCoolGameButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(JoiningServerPage));
@@ -60,6 +56,10 @@ namespace UWPBlox.Pages
                 GameName.Text = "WinSimulator";
                 GameIcon.Glyph = "\uEC4E";
             }
+        }
+        private void GameInfo_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GameInfo));
         }
     }
 }
