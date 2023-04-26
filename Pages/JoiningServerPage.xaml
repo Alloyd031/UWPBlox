@@ -11,8 +11,10 @@
     Loaded="Page_Loaded">
 
     <Grid>
-        <FontIcon x:Name="GameIcon" x:FieldModifier="public" FontFamily="Segoe Fluent Icons" Glyph="&#xE18A;" FontSize="400" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0"/>
-        <TextBlock x:Name="GameName" x:FieldModifier="public" Text="GameName" FontWeight="Black" FontSize="100" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,501,0,0"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <FontIcon x:Name="GameIcon" x:FieldModifier="public" FontFamily="Segoe Fluent Icons" Glyph="&#xE18A;" FontSize="400"/>
+            <TextBlock x:Name="GameName" x:FieldModifier="public" Text="GameName" FontWeight="Black" FontSize="100" Padding="0,0,0,0"/>
+        </StackPanel>
         <Grid VerticalAlignment="Bottom" Height="60">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <muxc:ProgressRing x:Name="JoinServerProgress" VerticalAlignment="Center" HorizontalAlignment="Left"/>
