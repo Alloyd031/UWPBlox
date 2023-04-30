@@ -20,19 +20,19 @@ namespace UWPBlox.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class DiscoverPage : Page
+    public sealed partial class RecommendedForYou : Page
     {
-        public DiscoverPage()
+        public RecommendedForYou()
         {
             this.InitializeComponent();
+        }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.GoBack();
         }
         private void GameInfo_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GameInfo));
-        }
-        private void RecommendedForYouButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(RecommendedForYou));
         }
     }
 }
