@@ -26,5 +26,9 @@ namespace UWPBlox.Pages
         {
             this.InitializeComponent();
         }
+        private void GameInfo_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GameInfo));
+        }
     }
 }

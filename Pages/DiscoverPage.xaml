@@ -11,8 +11,25 @@
 
     <Grid>
         <TextBlock Text="Discover" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
-        <ScrollViewer Margin="0,73,0,0">
-            
-        </ScrollViewer>
+        <Grid Margin="0,73,0,0">
+            <Button Background="Transparent" BorderBrush="Transparent" Height="48" VerticalAlignment="Top" Width="280" Margin="10,10,0,0">
+                <Grid Margin="-140,-23,-140,-24">
+                    <TextBlock Text="Recommended For You" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="20" Margin="10,0,0,0"/>
+                    <FontIcon Glyph="&#xE111;" Margin="250,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+            </Button>
+            <Button Height="194" Width="194" Margin="10,63,0,0" VerticalAlignment="Top" Click="GameInfo_Click">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <TextBlock Text="Some Cool Game :3" FontWeight="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
+                </Grid>
+            </Button>
+            <Button Height="194" Width="194" Margin="209,63,0,0" VerticalAlignment="Top" Click="GameInfo_Click">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <TextBlock Text="WinSimulator" FontWeight="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
+                </Grid>
+            </Button>
+        </Grid>
     </Grid>
 </Page>

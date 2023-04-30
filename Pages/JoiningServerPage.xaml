@@ -17,8 +17,8 @@
         </StackPanel>
         <Grid VerticalAlignment="Bottom" Height="60">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <muxc:ProgressRing x:Name="JoinServerProgress" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                <TextBlock Text="Joining server" FontWeight="Black" VerticalAlignment="Center" HorizontalAlignment="Right" Padding="10,0,10,0"/>
+                <muxc:ProgressRing x:Name="JoinServerProgress" Height="44" Width="44" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <TextBlock Text="Joining server" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" Padding="24,0,0,0"/>
             </StackPanel>
         </Grid>
     </Grid>
