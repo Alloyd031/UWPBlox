@@ -21,5 +21,10 @@
                 <FontIcon Glyph="&#xE8BB;"/>
             </Button>
         </Grid>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,97,0,0">
+            <FontIcon x:FieldModifier="public" x:Name="GameIcon" Glyph="&#xE7FC;" FontSize="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock x:FieldModifier="public" x:Name="GameName" Text="GameInfo" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="50" FontWeight="Bold"/>
+        </StackPanel>
+        <TextBlock x:FieldModifier="public" x:Name="GameDescription" Text="GameDescription" TextWrapping="Wrap" TextAlignment="Center" FontSize="50" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" Margin="30,0,0,0"/>
     </Grid>
 </Page>
