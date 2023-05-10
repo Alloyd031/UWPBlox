@@ -13,7 +13,7 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="32"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="120"/>
             <RowDefinition Height="*"/>
@@ -24,23 +24,23 @@
 					AutomationProperties.Name="Back"
 					Background="Transparent"
 					BorderBrush="Transparent"
-                    Height="40"
-                    Width="40"
+                    Height="32"
+                    Width="46"
                     Style="{StaticResource NavigationBackButtonNormalStyle}"
                     IsEnabled="{x:Bind ContentFrame.CanGoBack, Mode=OneWay}"
 					Click="BackButton_Click"
 					ToolTipService.ToolTip="Back">
         </Button>
         <Grid x:Name="AppTitleBar"
-              Background="Transparent" Height="40" Margin="40,0,0,0">
+              Background="Transparent" Height="32" Margin="46,0,0,0">
             <Image Source="/Assets/StoreLogo.png"
-                   Width="25"
-                   Height="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                   Width="20"
+                   Height="20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
             <TextBlock
                        x:Name="AppTitle"
-                       Text="UWPBlox" FontSize="20" HorizontalAlignment="Left"
+                       Text="UWPBlox" FontSize="15" HorizontalAlignment="Left"
                        Style="{StaticResource CaptionTextBlockStyle}"
-                       VerticalAlignment="Center" Margin="45,0,0,0"/>
+                       VerticalAlignment="Center" Margin="41,0,0,0"/>
         </Grid>
         <Grid x:FieldModifier="public" x:Name="PagesPanel" Grid.Row="1" Width="64" Grid.RowSpan="3" HorizontalAlignment="Left">
             <Button x:Name="HomeButton" Height="44" Width="44" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
