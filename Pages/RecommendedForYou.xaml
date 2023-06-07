@@ -11,8 +11,10 @@
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
 
     <Grid>
-        <Grid Height="73" VerticalAlignment="Top">
-            <Button
+        <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
+            <TextBlock Text="Recommended For You" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
+        </Grid>
+        <Button
 					x:Name="BackButton"
 					Width="53"
 					Height="53"
@@ -22,23 +24,19 @@
 					Click="BackButton_Click"
 					ToolTipService.ToolTip="Back" Margin="10,10,0,0" VerticalAlignment="Top">
                 <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
-                    <muxc:AnimatedIcon.Source>
-                        <animatedvisuals:AnimatedBackVisualSource/>
-                    </muxc:AnimatedIcon.Source>
                     <muxc:AnimatedIcon.FallbackIconSource>
                         <muxc:SymbolIconSource Symbol="Back"/>
                     </muxc:AnimatedIcon.FallbackIconSource>
+                    <animatedvisuals:AnimatedBackVisualSource/>
                 </muxc:AnimatedIcon>
             </Button>
-            <TextBlock Text="Recommended For You" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
-        </Grid>
-        <Button Height="194" Width="194" Margin="10,78,0,0" VerticalAlignment="Top" Click="GameInfo_Click">
+        <Button Height="194" Width="194" Margin="10,78,0,0" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <TextBlock Text="Some Cool Game :3" FontWeight="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
             </Grid>
         </Button>
-        <Button Height="194" Width="194" Margin="209,78,0,0" VerticalAlignment="Top" Click="GameInfo_Click">
+        <Button Height="194" Width="194" Margin="209,78,0,0" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <TextBlock Text="WinSimulator" FontWeight="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>

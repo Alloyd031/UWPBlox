@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ViewManagement;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,27 +28,15 @@ namespace UWPBlox.Pages
         public AddFriendsPage()
         {
             this.InitializeComponent();
+            Window.Current.SetTitleBar(AppTitleBar);
+            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
+            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            titleBar.ButtonBackgroundColor = Colors.Transparent;
+            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame contentFrame = Window.Current.Content as Frame;
-            MainPage mp = contentFrame.Content as MainPage;
-            Grid grid = mp.Content as Grid;
-            Grid PagesPanel = grid.FindName("PagesPanel") as Grid;
-            Frame ContentFrame = grid.FindName("ContentFrame") as Frame;
-            PagesPanel.Visibility = Visibility.Visible;
-            ContentFrame.Margin = new Thickness(64, 0, 0, 0);
             this.Frame.GoBack();
-        }
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-            Frame contentFrame = Window.Current.Content as Frame;
-            MainPage mp = contentFrame.Content as MainPage;
-            Grid grid = mp.Content as Grid;
-            Grid PagesPanel = grid.FindName("PagesPanel") as Grid;
-            Frame ContentFrame = grid.FindName("ContentFrame") as Frame;
-            PagesPanel.Visibility = Visibility.Collapsed;
-            ContentFrame.Margin = new Thickness(0, 0, 0, 0);
         }
     }
 }

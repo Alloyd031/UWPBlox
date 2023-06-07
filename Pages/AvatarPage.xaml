@@ -10,7 +10,9 @@
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
 
     <Grid>
-        <TextBlock Text="Avatar" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
+        <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
+            <TextBlock Text="Avatar" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0"/>
+        </Grid>
         <ScrollViewer Margin="0,73,0,0">
 
         </ScrollViewer>

@@ -8,12 +8,13 @@
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
-    Loaded="Page_Loaded">
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
 
     <Grid>
-        <Grid Height="73" VerticalAlignment="Top">
-            <Button
+        <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
+            <TextBlock Text="Add Friends" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
+        </Grid>
+        <Button
 					x:Name="BackButton"
 					Width="53"
 					Height="53"
@@ -21,17 +22,15 @@
 					Background="Transparent"
 					BorderBrush="Transparent"
 					Click="BackButton_Click"
-					ToolTipService.ToolTip="Back" Margin="10,0,0,0">
-                <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
-                    <muxc:AnimatedIcon.Source>
-                        <animatedvisuals:AnimatedBackVisualSource/>
-                    </muxc:AnimatedIcon.Source>
-                    <muxc:AnimatedIcon.FallbackIconSource>
-                        <muxc:SymbolIconSource Symbol="Back"/>
-                    </muxc:AnimatedIcon.FallbackIconSource>
-                </muxc:AnimatedIcon>
-            </Button>
-            <TextBlock Text="Add Friends" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
-        </Grid>
+					ToolTipService.ToolTip="Back" Margin="10,10,0,0" VerticalAlignment="Top">
+            <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
+                <muxc:AnimatedIcon.Source>
+                    <animatedvisuals:AnimatedBackVisualSource/>
+                </muxc:AnimatedIcon.Source>
+                <muxc:AnimatedIcon.FallbackIconSource>
+                    <muxc:SymbolIconSource Symbol="Back"/>
+                </muxc:AnimatedIcon.FallbackIconSource>
+            </muxc:AnimatedIcon>
+        </Button>
     </Grid>
 </Page>

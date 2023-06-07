@@ -10,17 +10,16 @@
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
 
     <Grid>
-        <Grid Height="73" VerticalAlignment="Top">
-            <Button
+        <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top"/>
+        <Button
 					x:Name="CloseGameInfo"
 					Width="53"
 					Height="53"
 					AutomationProperties.Name="Close"
 					Background="Transparent"
-					BorderBrush="Transparent" Margin="10,0,0,0" Click="CloseGameInfo_Click" ToolTipService.ToolTip="Close Game Info">
-                <FontIcon Glyph="&#xE8BB;"/>
-            </Button>
-        </Grid>
+					BorderBrush="Transparent" Margin="10,10,0,0" Click="CloseGameInfo_Click" ToolTipService.ToolTip="Close Game Info" VerticalAlignment="Top">
+            <FontIcon Glyph="&#xE8BB;"/>
+        </Button>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,97,0,0">
             <FontIcon x:FieldModifier="public" x:Name="GameIcon" Glyph="&#xE7FC;" FontSize="200" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock x:FieldModifier="public" x:Name="GameName" Text="GameInfo" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource CaptionTextBlockStyle}" FontSize="50" FontWeight="Bold"/>

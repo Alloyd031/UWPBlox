@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="UWPBlox.MorePages.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPBlox.MorePages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+
+    <Grid>
+        <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
+            <TextBlock Text="Settings" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Normal" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+        <Button
+					x:Name="BackButton"
+					Width="53"
+					Height="53"
+					AutomationProperties.Name="Back"
+					Background="Transparent"
+					BorderBrush="Transparent"
+					Click="BackButton_Click"
+					ToolTipService.ToolTip="Back" Margin="10,10,0,0" VerticalAlignment="Top">
+            <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
+                <muxc:AnimatedIcon.Source>
+                    <animatedvisuals:AnimatedBackVisualSource/>
+                </muxc:AnimatedIcon.Source>
+                <muxc:AnimatedIcon.FallbackIconSource>
+                    <muxc:SymbolIconSource Symbol="Back"/>
+                </muxc:AnimatedIcon.FallbackIconSource>
+            </muxc:AnimatedIcon>
+        </Button>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,15,150,0">
+            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
+                        ToolTipService.ToolTip="Robux">
+                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;"/>
+            </Button>
+            <AppBarSeparator/>
+            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
+                        ToolTipService.ToolTip="Notifications">
+                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
+            </Button>
+        </StackPanel>
+        <Grid Width="500" VerticalAlignment="Top" Height="425" Margin="500,95,500,0">
+            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Grid Margin="-250,-30,-250,-30">
+                    <TextBlock Text="Account Info" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                    <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
+                </Grid>
+            </Button>
+            <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,65,0,0"/>
+            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top">
+                <Grid Margin="-250,-30,-250,-30">
+                    <TextBlock Text="Security" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                    <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
+                </Grid>
+            </Button>
+            <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,138,0,0"/>
+            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,146,0,0" VerticalAlignment="Top">
+                <Grid Margin="-250,-30,-250,-30">
+                    <TextBlock Text="Privacy" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                    <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
+                </Grid>
+            </Button>
+            <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,211,0,0"/>
+            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top">
+                <Grid Margin="-250,-30,-250,-30">
+                    <TextBlock Text="Paternal Controls" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                    <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
+                </Grid>
+            </Button>
+            <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,284,0,0"/>
+            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,292,0,0" VerticalAlignment="Top">
+                <Grid Margin="-250,-30,-250,-30">
+                    <TextBlock Text="Billing" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                    <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
+                </Grid>
+            </Button>
+            <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,357,0,0"/>
+            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top">
+                <Grid Margin="-250,-30,-250,-30">
+                    <TextBlock Text="Notifications" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                    <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
+                </Grid>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

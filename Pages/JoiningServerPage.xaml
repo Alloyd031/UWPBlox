@@ -11,6 +11,7 @@
     Loaded="Page_Loaded">
 
     <Grid>
+        <Grid x:Name="AppTitleBar" Background="Transparent" Height="32" VerticalAlignment="Top"/>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <FontIcon x:Name="GameIcon" x:FieldModifier="public" FontFamily="Segoe Fluent Icons" Glyph="&#xE18A;" FontSize="400"/>
             <TextBlock x:Name="GameName" x:FieldModifier="public" Text="GameName" FontWeight="Black" FontSize="100" Padding="0,0,0,0"/>
