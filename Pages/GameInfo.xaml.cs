@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Threading.Tasks;
+using UWPBlox.GamesPages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -37,6 +39,39 @@ namespace UWPBlox.Pages
         private void CloseGameInfo_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.GoBack();
+        }
+        private async void Play_Click(object sender, RoutedEventArgs e)
+        {
+            if (GameName.Text == "Some Cool Game :3")
+            {
+                this.Frame.Navigate(typeof(JoiningServerPage));
+
+                JoiningServerPage JoinServerPage = Frame.Content as JoiningServerPage;
+                if (JoinServerPage != null)
+                {
+                    FontIcon GameIcon = JoinServerPage.FindName("GameIcon") as FontIcon;
+                    TextBlock GameName = JoinServerPage.FindName("GameName") as TextBlock;
+                    GameName.Text = "Some Cool Game :3";
+                    GameIcon.Glyph = "\uE7FC";
+                    await Task.Delay(5000);
+                    this.Frame.Navigate(typeof(SomeCoolGame));
+                }
+            }    
+            if (GameName.Text == "WinSimulator")
+            {
+                this.Frame.Navigate(typeof(JoiningServerPage));
+
+                JoiningServerPage JoinServerPage = Frame.Content as JoiningServerPage;
+                if (JoinServerPage != null)
+                {
+                    FontIcon GameIcon = JoinServerPage.FindName("GameIcon") as FontIcon;
+                    TextBlock GameName = JoinServerPage.FindName("GameName") as TextBlock;
+                    GameName.Text = "WinSimulator";
+                    GameIcon.Glyph = "\uEC4E";
+                    await Task.Delay(5000);
+                    this.Frame.Navigate(typeof(WinSimulator));
+                }
+            }
         }
     }
 }

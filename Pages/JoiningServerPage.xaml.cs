@@ -36,23 +36,16 @@ namespace UWPBlox.Pages
             titleBar.ButtonBackgroundColor = Colors.Transparent;
             titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
         }
-        private async void Page_Loaded(object sender, RoutedEventArgs e)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             Frame contentFrame = Window.Current.Content as Frame;
             MainPage mp = contentFrame.Content as MainPage;
-            Grid grid = mp.Content as Grid;
-            Grid PagesPanel = grid.FindName("PagesPanel") as Grid;
-            Frame ContentFrame = grid.FindName("ContentFrame") as Frame;
+            Grid gridmp = mp.Content as Grid;
+            Grid PagesPanel = gridmp.FindName("PagesPanel") as Grid;
+            Frame ContentFrame = gridmp.FindName("ContentFrame") as Frame;
             PagesPanel.Visibility = Visibility.Collapsed;
             ContentFrame.Margin = new Thickness(0, 0, 0, 0);
-
             JoinServerProgress.IsIndeterminate = true;
-            await Task.Delay(5000);
-            ErrorDialog dialog = new ErrorDialog();
-            await dialog.ShowAsync();
-            this.Frame.GoBack();
-            PagesPanel.Visibility = Visibility.Visible;
-            ContentFrame.Margin = new Thickness(64, 0, 0, 0);
         }
     }
 }

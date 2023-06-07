@@ -15,6 +15,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Threading.Tasks;
+using UWPBlox.GamesPages;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -38,7 +40,7 @@ namespace UWPBlox.Pages
         {
             this.Frame.Navigate(typeof(AddFriendsPage));
         }
-        private void PlayCoolGameButton_Click(object sender, RoutedEventArgs e)
+        private async void PlayCoolGameButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(JoiningServerPage));
 
@@ -49,9 +51,11 @@ namespace UWPBlox.Pages
                 TextBlock GameName = JoinServerPage.FindName("GameName") as TextBlock;
                 GameName.Text = "Some Cool Game :3";
                 GameIcon.Glyph = "\uE7FC";
+                await Task.Delay(5000);
+                this.Frame.Navigate(typeof(SomeCoolGame));
             }
         }
-        private void PlayWinSimulatorButton_Click(object sender, RoutedEventArgs e)
+        private async void PlayWinSimulatorButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(JoiningServerPage));
 
@@ -62,6 +66,8 @@ namespace UWPBlox.Pages
                 TextBlock GameName = JoinServerPage.FindName("GameName") as TextBlock;
                 GameName.Text = "WinSimulator";
                 GameIcon.Glyph = "\uEC4E";
+                await Task.Delay(5000);
+                this.Frame.Navigate(typeof(WinSimulator));
             }
         }
         private void WinSimulatorInfo_Click(object sender, RoutedEventArgs e)

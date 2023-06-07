@@ -13,14 +13,12 @@
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
             <TextBlock Text="Home" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0"/>
         </Grid>
-        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Margin="0,15,150,0">
-            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
-                        ToolTipService.ToolTip="Robux">
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
+            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Robux">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;"/>
             </Button>
             <AppBarSeparator/>
-            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
-                        ToolTipService.ToolTip="Notifications">
+            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Notifications">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
             </Button>
         </StackPanel>
@@ -30,14 +28,14 @@
                 <Button Background="Transparent" BorderBrush="Transparent" Height="141" Width="146" Margin="17,51,0,0" VerticalAlignment="Top" Click="AddFriends_Click">
                     <Grid Margin="-73,-70,-73,-71">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE125;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <TextBlock Text="Add Friends" FontWeight="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,112,0,0"/>
+                        <TextBlock Text="Add Friends" FontWeight="Black" FontSize="17" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,112,0,0"/>
                     </Grid>
                 </Button>
                 <TextBlock Text="Continue" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" Margin="17,197,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <Button Height="275" Width="194" Margin="17,235,0,0" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
                     <Grid Margin="-97,-137,-97,-138">
-                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,16,0,0"/>
-                        <TextBlock Text="Some Cool Game :3" FontWeight="Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,69,0,0"/>
+                        <TextBlock Text="Some Cool Game :3" FontWeight="Normal" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         <Button x:Name="PlayCoolGameButton" Width="177" Height="36" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayCoolGameButton_Click"
                                 ToolTipService.ToolTip="Play">
                             <Grid Margin="-89,-18,-88,-18">
@@ -48,8 +46,8 @@
                 </Button>
                 <Button Height="275" Width="194" Margin="216,235,0,0" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
                     <Grid Margin="-97,-137,-97,-138">
-                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,16,0,0"/>
-                        <TextBlock Text="WinSimulator" FontWeight="Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,67,0,0"/>
+                        <TextBlock Text="WinSimulator" FontWeight="Normal" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                         <Button x:Name="PlayWinSimulatorButton" Width="177" Height="36" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayWinSimulatorButton_Click"
                                 ToolTipService.ToolTip="Play">
                             <Grid Margin="-89,-18,-88,-18">

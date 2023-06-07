@@ -122,8 +122,26 @@
     <Compile Include="Dialogs\ErrorDialog.xaml.cs">
       <DependentUpon>ErrorDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\LeaveQuestion.xaml.cs">
+      <DependentUpon>LeaveQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ResetQuestion.xaml.cs">
+      <DependentUpon>ResetQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamesPages\SomeCoolGame.xaml.cs">
+      <DependentUpon>SomeCoolGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamesPages\WinSimulator.xaml.cs">
+      <DependentUpon>WinSimulator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPages\People.xaml.cs">
+      <DependentUpon>People.xaml</DependentUpon>
     </Compile>
     <Compile Include="MorePages\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
@@ -184,9 +202,33 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Dialogs\LeaveQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialogs\ResetQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GamesPages\SomeCoolGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GamesPages\WinSimulator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MenuPages\People.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MorePages\AboutPage.xaml">
       <SubType>Designer</SubType>
