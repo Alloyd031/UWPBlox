@@ -105,6 +105,8 @@
                 </Button.Flyout>
             </Button>
         </StackPanel>
-        <TextBlock Text="Lol, there's nothing here! :D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="34"/>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,56,0,0">
+            <TextBlock Text="Lol, there's nothing here! :D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="34"/>
+        </Grid>
     </Grid>
 </Page>
