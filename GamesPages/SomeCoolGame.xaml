@@ -16,14 +16,95 @@
             <Button x:Name="Menu" Width="44" Height="44" Background="Transparent" BorderBrush="Transparent" Click="Menu_Click">
                 <FontIcon Glyph="&#xE700;"/>
             </Button>
-            <Button Width="44" Height="44" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top">
+            <Button x:Name="Messages" Width="44" Height="44" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top">
                 <FontIcon Glyph="&#xE8F2;"/>
+                <Button.Flyout>
+                    <Flyout Placement="BottomEdgeAlignedLeft">
+                        <Grid Width="400" Height="265">
+                            <TextBlock Text="Chat is currently not available." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
+                            <TextBox PlaceholderText="To chat click here or press '/' key" VerticalAlignment="Bottom"/>
+                        </Grid>
+                        <Flyout.FlyoutPresenterStyle>
+                            <Style TargetType="FlyoutPresenter">
+                                <Setter Property="Padding" Value="0"/>
+                                <Setter Property="CornerRadius" Value="0"/>
+                                <Setter Property="Background" Value="#121314"/>
+                                <Setter Property="BorderBrush" Value="#121314"/>
+                            </Style>
+                        </Flyout.FlyoutPresenterStyle>
+                    </Flyout>
+                </Button.Flyout>
             </Button>
         </StackPanel>
         <StackPanel x:Name="RightItems" Orientation="Horizontal" Margin="0,6,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,0,190,0">
-            <Button Width="44" Height="44" Background="Transparent" BorderBrush="Transparent">
+            <Button x:Name="More" Width="44" Height="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon Glyph="&#xE10C;"/>
+                <Button.Flyout>
+                    <Flyout Placement="BottomEdgeAlignedRight">
+                        <Grid Width="276" Background="#121314">
+                            <Button Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                <Grid Margin="-138,-27,-138,-28">
+                                    <FontIcon Glyph="&#xECA7;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
+                                    <TextBlock Text="Leaderboard" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>
+                                </Grid>
+                                <Button.Resources>
+                                    <ResourceDictionary>
+                                        <SolidColorBrush x:Key="ButtonBackground" Color="#121314"/>
+                                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191919"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#000000"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#5A5A5A"/>
+                                    </ResourceDictionary>
+                                </Button.Resources>
+                            </Button>
+                            <MenuFlyoutSeparator Background="White" VerticalAlignment="Top" Margin="0,52,0,0"/>
+                            <Button Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top">
+                                <Grid Margin="-138,-27,-138,-28">
+                                    <FontIcon Glyph="&#xED54;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
+                                    <TextBlock Text="Emotes" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>
+                                </Grid>
+                                <Button.Resources>
+                                    <ResourceDictionary>
+                                        <SolidColorBrush x:Key="ButtonBackground" Color="#121314"/>
+                                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191919"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#000000"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#5A5A5A"/>
+                                    </ResourceDictionary>
+                                </Button.Resources>
+                            </Button>
+                            <MenuFlyoutSeparator Background="White" VerticalAlignment="Top" Margin="0,107,0,0"/>
+                            <Button Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top">
+                                <Grid Margin="-138,-27,-138,-28">
+                                    <FontIcon Glyph="&#xE821;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
+                                    <TextBlock Text="Invertory" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>
+                                </Grid>
+                                <Button.Resources>
+                                    <ResourceDictionary>
+                                        <SolidColorBrush x:Key="ButtonBackground" Color="#121314"/>
+                                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191919"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#000000"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#5A5A5A"/>
+                                    </ResourceDictionary>
+                                </Button.Resources>
+                            </Button>
+                        </Grid>
+                        <Flyout.FlyoutPresenterStyle>
+                            <Style TargetType="FlyoutPresenter">
+                                <Setter Property="Padding" Value="0"/>
+                                <Setter Property="CornerRadius" Value="0"/>
+                                <Setter Property="Background" Value="#121314"/>
+                                <Setter Property="BorderBrush" Value="#121314"/>
+                            </Style>
+                        </Flyout.FlyoutPresenterStyle>
+                    </Flyout>
+                </Button.Flyout>
             </Button>
         </StackPanel>
+        <TextBlock Text="Lol, there's nothing here! :D" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="34"/>
     </Grid>
 </Page>

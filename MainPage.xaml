@@ -12,28 +12,78 @@
     Loaded="Page_Loaded">
 
     <Grid>
-        <Grid x:Name="PagesPanel" Width="64" Grid.RowSpan="4" HorizontalAlignment="Left">
+        <Grid x:Name="PagesPanel" Background="#191B1D" Width="64" Grid.RowSpan="4" HorizontalAlignment="Left">
             <Button x:Name="HomeButton" Height="44" Width="44" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="HomeButton_Click" ToolTipService.ToolTip="Home">
+                    Background="Transparent" BorderBrush="Transparent" Click="HomeButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE10F;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
             <Button x:Name="DiscoverButton" Height="44" Width="44" Margin="0,59,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="DiscoverButton_Click" ToolTipService.ToolTip="Discover">
+                    Background="Transparent" BorderBrush="Transparent" Click="DiscoverButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE102;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
             <Button x:Name="AvatarButton" Height="44" Width="44" Margin="0,108,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="AvatarButton_Click" ToolTipService.ToolTip="Avatar">
+                    Background="Transparent" BorderBrush="Transparent" Click="AvatarButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE13D;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
             <Button x:Name="ConnectButton" Height="44" Width="44" Margin="0,157,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="ConnectButton_Click" ToolTipService.ToolTip="Connect">
+                    Background="Transparent" BorderBrush="Transparent" Click="ConnectButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE15F;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
             <Button x:Name="MoreButton" Height="44" Width="44" Margin="0,206,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="MoreButton_Click" ToolTipService.ToolTip="More">
+                    Background="Transparent" BorderBrush="Transparent" Click="MoreButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE10C;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
         </Grid>
-        <Frame x:Name="ContentFrame" Grid.RowSpan="4" Margin="64,0,0,0" />
+        <Frame x:Name="ContentFrame" Background="#232527" Grid.RowSpan="4" Margin="64,0,0,0"/>
     </Grid>
 </Page>

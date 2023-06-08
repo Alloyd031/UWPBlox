@@ -17,13 +17,23 @@
 					Height="53"
 					AutomationProperties.Name="Close"
 					Background="Transparent"
-					BorderBrush="Transparent" Margin="10,10,0,0" Click="CloseGameInfo_Click" ToolTipService.ToolTip="Close Game Info" VerticalAlignment="Top">
+					BorderBrush="Transparent" Margin="10,10,0,0" Click="CloseGameInfo_Click" VerticalAlignment="Top">
             <FontIcon Glyph="&#xE8BB;"/>
         </Button>
         <FontIcon x:FieldModifier="public" x:Name="GameIcon" HorizontalAlignment="Left" VerticalAlignment="Top" Glyph="&#xE7FC;" FontSize="200" Margin="37,321,0,0"/>
         <TextBlock x:FieldModifier="public" x:Name="GameName" Text="GameName" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" FontSize="50" FontWeight="Bold" Margin="274,349,0,0"/>
-        <Button Width="236" Height="48" Margin="274,421,0,0" Background="Green" Foreground="White" BorderBrush="Green" VerticalAlignment="Top" Click="Play_Click">
+        <Button x:Name="PlayButton" Width="236" Height="48" Margin="274,421,0,0" VerticalAlignment="Top" Click="Play_Click">
             <FontIcon FontFamily="Segoe Fluent Icons" FontSize="24" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button.Resources>
+                <ResourceDictionary>
+                    <SolidColorBrush x:Key="ButtonBackground" Color="#00B06F"/>
+                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#00B06F"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#116B4B"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#88B5A5"/>
+                </ResourceDictionary>
+            </Button.Resources>
         </Button>
         <TextBlock Text="Description" TextWrapping="Wrap" TextAlignment="Center" FontSize="36" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" Margin="37,592,0,0"/>
         <TextBlock x:FieldModifier="public" x:Name="GameDescription" Text="GameDescription" TextWrapping="Wrap" TextAlignment="Center" FontSize="32" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" Margin="37,657,0,0"/>

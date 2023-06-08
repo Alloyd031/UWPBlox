@@ -31,6 +31,15 @@ namespace UWPBlox
         public MainPage()
         {
             this.InitializeComponent();
+            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
+            titleBar.ButtonBackgroundColor = Colors.Transparent;
+            titleBar.ButtonForegroundColor = Colors.White;
+            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
+            titleBar.ButtonInactiveForegroundColor = Colors.Gray;
+            titleBar.ButtonHoverBackgroundColor = Colors.DarkGray;
+            titleBar.ButtonHoverForegroundColor = Colors.White;
+            titleBar.ButtonPressedBackgroundColor = Colors.Black;
+            titleBar.ButtonPressedForegroundColor = Colors.DarkGray;
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {

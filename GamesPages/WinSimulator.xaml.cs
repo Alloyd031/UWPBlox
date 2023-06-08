@@ -31,9 +31,6 @@ namespace UWPBlox.GamesPages
             this.InitializeComponent();
             Window.Current.SetTitleBar(AppTitleBar);
             CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
-            ApplicationViewTitleBar titleBar = ApplicationView.GetForCurrentView().TitleBar;
-            titleBar.ButtonBackgroundColor = Colors.Transparent;
-            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
         }
         private async void Menu_Click(object sender, RoutedEventArgs e)
         {

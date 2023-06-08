@@ -69,39 +69,62 @@
                         <TextBlock Text="Blog" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="796,199,0,0" Click="Settings_Click">
-                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
-                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE713;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
-                        <TextBlock Text="Settings" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
-                    </Grid>
-                </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="0,398,0,0" Click="About_Click">
-                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
-                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE946;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
-                        <TextBlock Text="About" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
-                    </Grid>
-                </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="199,398,0,0">
-                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
-                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE11B;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
-                        <TextBlock Text="Help" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
-                    </Grid>
-                </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="0,398,0,0" HorizontalAlignment="Center">
+                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="796,398,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE72E;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Quick Log In" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
                 </Button>
-                <Button Content="Log Out" Width="640" Height="40" Background="Transparent" BorderBrush="Black" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top"/>
+                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="199,398,0,0" Click="Settings_Click">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE713;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
+                        <TextBlock Text="Settings" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
+                    </Grid>
+                </Button>
+                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="0,398,0,0" HorizontalAlignment="Center" Click="About_Click">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE946;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
+                        <TextBlock Text="About" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
+                    </Grid>
+                </Button>
+                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="0,398,0,0">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7BF;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
+                        <TextBlock Text="Official Store" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
+                    </Grid>
+                </Button>
+                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="597,398,0,0">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE11B;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
+                        <TextBlock Text="Help" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
+                    </Grid>
+                </Button>
+                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="796,199,0,0">
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF133;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
+                        <TextBlock Text="Gift Cards" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
+                    </Grid>
+                </Button>
+                <Button Content="Log Out" Width="640" Height="40" FontSize="20" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top">
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#797A7A"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
+                </Button>
             </Grid>
         </ScrollViewer>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
-            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Robux">
+            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;"/>
             </Button>
             <AppBarSeparator/>
-            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Notifications">
+            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
             </Button>
         </StackPanel>

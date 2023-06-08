@@ -22,7 +22,7 @@
 					Background="Transparent"
 					BorderBrush="Transparent"
 					Click="BackButton_Click"
-					ToolTipService.ToolTip="Back" Margin="10,10,0,0" VerticalAlignment="Top">
+				    Margin="10,10,0,0" VerticalAlignment="Top">
             <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
                 <muxc:AnimatedIcon.Source>
                     <animatedvisuals:AnimatedBackVisualSource/>

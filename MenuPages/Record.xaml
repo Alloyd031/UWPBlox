@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="UWPBlox.MenuPages.Record"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPBlox.MenuPages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+    Width="800"
+    Height="570">
+
+    <Grid>
+        <Grid VerticalAlignment="Top">
+            <TextBlock Text="Screenshot" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="10,10,0,0"/>
+            <TextBlock Text="By clicking the 'Take Screenshot' button, the menu will close and take a screenshot and save it to your computer." HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="25" Margin="0,55,0,0" Width="781"/>
+            <Button Content="Take Screenshot" CornerRadius="8" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top">
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#32B5FF"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                    </ResourceDictionary>
+                </Button.Resources>
+            </Button>
+        </Grid>
+        <Grid VerticalAlignment="Top" Margin="0,187,0,0">
+            <TextBlock Text="Video" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="10,10,0,0"/>
+            <TextBlock Text="By clicking the 'Record Video' button, the menu will close and start recording your screen." HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="25" Margin="0,55,0,0" Width="781"/>
+            <Button Content="Record Video" CornerRadius="8" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top">
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#32B5FF"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                    </ResourceDictionary>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

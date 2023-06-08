@@ -33,13 +33,13 @@
         <Button Height="194" Width="194" Margin="10,78,0,0" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBlock Text="Some Cool Game :3" FontWeight="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
+                <TextBlock Text="Some Cool Game :3" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
             </Grid>
         </Button>
         <Button Height="194" Width="194" Margin="209,78,0,0" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBlock Text="WinSimulator" FontWeight="Black" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
+                <TextBlock Text="WinSimulator" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
             </Grid>
         </Button>
     </Grid>

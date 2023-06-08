@@ -5,8 +5,11 @@
     xmlns:local="using:UWPBlox.Dialogs"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Style="{StaticResource DefaultContentDialogStyle}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Background="#222222"
+    Foreground="White"
+    BorderBrush="#222222"
+    CornerRadius="8">
 
     <ContentDialog.Resources>
         <ResourceDictionary>
@@ -23,7 +26,29 @@
 			HorizontalAlignment="Stretch"
 			VerticalAlignment="Stretch">
         <TextBlock Text="Are you sure you want to reset your character?" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,118,0,0"/>
-        <Button x:Name="Reset" Content="Reset" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Margin="126,228,0,0" Click="Reset_Click"/>
-        <Button x:Name="DontReset" Content="Don't Reset" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Click="DontReset_Click" Margin="416,228,0,0"/>
+        <Button x:Name="Reset" Content="Reset" CornerRadius="8" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Margin="126,228,0,0" Click="Reset_Click">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
+                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#32B5FF"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="DontReset" Content="Don't Reset" CornerRadius="8" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Click="DontReset_Click" Margin="416,228,0,0">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
+                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#32B5FF"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                </ResourceDictionary>
+            </Button.Resources>
+        </Button>
     </Grid>
 </ContentDialog>

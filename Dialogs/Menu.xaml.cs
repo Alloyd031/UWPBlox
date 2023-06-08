@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Numerics;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UWPBlox.MenuPages;
 using Windows.Foundation;
@@ -34,6 +35,12 @@ namespace UWPBlox.Dialogs
             LeaveQuestion dialog = new LeaveQuestion();
             await dialog.ShowAsync();
         }
+        private async void ResetCharacter_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            ResetQuestion dialog = new ResetQuestion();
+            await dialog.ShowAsync();
+        }
         private void ContentDialog_Loaded(object sender, RoutedEventArgs e)
         {
             this.ContentFrame.Navigate(typeof(People));
@@ -42,11 +49,21 @@ namespace UWPBlox.Dialogs
         {
             this.ContentFrame.Navigate(typeof(People));
         }
-        private async void ResetCharacter_Click(object sender, RoutedEventArgs e)
+        private void Settings_Click(object sender, RoutedEventArgs e)
         {
-            Hide();
-            ResetQuestion dialog = new ResetQuestion();
-            await dialog.ShowAsync();
+            this.ContentFrame.Navigate(typeof(Settings));
+        }
+        private void Report_Click(object sender, RoutedEventArgs e)
+        {
+            this.ContentFrame.Navigate(typeof(Report));
+        }
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+            this.ContentFrame.Navigate(typeof(Help));
+        }
+        private void Record_Click(object sender, RoutedEventArgs e)
+        {
+            this.ContentFrame.Navigate(typeof(Record));
         }
     }
 }

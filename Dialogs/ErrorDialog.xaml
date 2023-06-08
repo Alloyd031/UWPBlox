@@ -5,8 +5,11 @@
     xmlns:local="using:UWPBlox.Dialogs"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Style="{StaticResource DefaultContentDialogStyle}"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    CornerRadius="8"
+    Background="#222222"
+    Foreground="White"
+    BorderBrush="#222222">
 
     <ContentDialog.Resources>
         <ResourceDictionary>
@@ -23,11 +26,19 @@
 			VerticalAlignment="Stretch">
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBlock Text="NOT_IMPLEMENTED" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
+            <TextBlock Text="NOT_IMPLEMENTED" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
         </Grid>
-        <Button x:Name="OKButton" Width="44" Height="44" Style="{StaticResource AccentButtonStyle}" Click="OKButton_Click"
-                ToolTipService.ToolTip="OK" Margin="396,196,0,0" VerticalAlignment="Top">
-            <FontIcon Glyph="&#xE10B;"/>
+        <Button x:Name="OKButton" Content="OK" CornerRadius="8" Width="70" Height="44" FontSize="20" Click="OKButton_Click" Margin="370,196,0,0" VerticalAlignment="Top">
+            <Button.Resources>
+                <ResourceDictionary>
+                    <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
+                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#32B5FF"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                </ResourceDictionary>
+            </Button.Resources>
         </Button>
     </Grid>
 </ContentDialog>
