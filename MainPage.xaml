@@ -18,11 +18,11 @@
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE10F;"/>
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
                     </ResourceDictionary>
                 </Button.Resources>
@@ -32,11 +32,11 @@
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE102;"/>
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
                     </ResourceDictionary>
                 </Button.Resources>
@@ -46,11 +46,11 @@
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE13D;"/>
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
                     </ResourceDictionary>
                 </Button.Resources>
@@ -60,11 +60,11 @@
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE15F;"/>
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
                     </ResourceDictionary>
                 </Button.Resources>
@@ -74,11 +74,11 @@
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE10C;"/>
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#191B1D"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
                     </ResourceDictionary>
                 </Button.Resources>

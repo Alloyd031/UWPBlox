@@ -22,8 +22,16 @@
                     <Flyout Placement="BottomEdgeAlignedLeft">
                         <Grid Width="400" Height="265">
                             <TextBlock Text="Chat is currently not available." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
-                            <TextBox PlaceholderText="To chat click here or press '/' key" VerticalAlignment="Bottom"/>
+                            <TextBox PlaceholderText="To chat click here or press '/' key" CornerRadius="0" VerticalAlignment="Bottom"/>
                         </Grid>
+                        <Flyout.FlyoutPresenterStyle>
+                            <Style TargetType="FlyoutPresenter">
+                                <Setter Property="Padding" Value="0"/>
+                                <Setter Property="CornerRadius" Value="0"/>
+                                <Setter Property="Background" Value="#121314"/>
+                                <Setter Property="BorderBrush" Value="#121314"/>
+                            </Style>
+                        </Flyout.FlyoutPresenterStyle>
                     </Flyout>
                 </Button.Flyout>
             </Button>
