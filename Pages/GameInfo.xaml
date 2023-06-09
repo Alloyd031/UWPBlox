@@ -102,7 +102,7 @@
                     <Flyout.FlyoutPresenterStyle>
                         <Style TargetType="FlyoutPresenter">
                             <Setter Property="Padding" Value="0"/>
-                            <Setter Property="CornerRadius" Value="0"/>
+                            <Setter Property="CornerRadius" Value="8"/>
                             <Setter Property="Background" Value="#393B3D"/>
                             <Setter Property="BorderBrush" Value="#393B3D"/>
                         </Style>
@@ -206,7 +206,7 @@
                     <Flyout.FlyoutPresenterStyle>
                         <Style TargetType="FlyoutPresenter">
                             <Setter Property="Padding" Value="0"/>
-                            <Setter Property="CornerRadius" Value="0"/>
+                            <Setter Property="CornerRadius" Value="8"/>
                             <Setter Property="Background" Value="#393B3D"/>
                             <Setter Property="BorderBrush" Value="#393B3D"/>
                         </Style>
