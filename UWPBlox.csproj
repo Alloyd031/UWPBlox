@@ -185,6 +185,9 @@
     <Compile Include="Pages\MorePage.xaml.cs">
       <DependentUpon>MorePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MostEngaging.xaml.cs">
+      <DependentUpon>MostEngaging.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RecommendedForYou.xaml.cs">
       <DependentUpon>RecommendedForYou.xaml</DependentUpon>
     </Compile>
@@ -295,6 +298,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\MorePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MostEngaging.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

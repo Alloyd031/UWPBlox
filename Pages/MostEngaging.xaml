@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="UWPBlox.Pages.AddFriendsPage"
+    x:Class="UWPBlox.Pages.MostEngaging"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UWPBlox.Pages"
@@ -12,7 +12,7 @@
 
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
-            <TextBlock Text="Add Friends" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
+            <TextBlock Text="Most Engaging" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
         </Grid>
         <Button
 					x:Name="BackButton"
@@ -22,14 +22,12 @@
 					Background="Transparent"
 					BorderBrush="Transparent"
 					Click="BackButton_Click"
-				    Margin="10,10,0,0" VerticalAlignment="Top">
+					ToolTipService.ToolTip="Back" Margin="10,10,0,0" VerticalAlignment="Top">
             <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
-                <muxc:AnimatedIcon.Source>
-                    <animatedvisuals:AnimatedBackVisualSource/>
-                </muxc:AnimatedIcon.Source>
                 <muxc:AnimatedIcon.FallbackIconSource>
                     <muxc:SymbolIconSource Symbol="Back"/>
                 </muxc:AnimatedIcon.FallbackIconSource>
+                <animatedvisuals:AnimatedBackVisualSource/>
             </muxc:AnimatedIcon>
             <Button.Resources>
                 <ResourceDictionary>
@@ -44,9 +42,6 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-            <FontIcon Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBlock Text="This page is not available." Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
-        </Grid>
+        <TextBlock Text="No games here." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40"/>
     </Grid>
 </Page>

@@ -12,7 +12,7 @@
     Height="570">
 
     <Grid>
-        <Button Width="780" Height="62" CornerRadius="8" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Button Width="780" Height="62" CornerRadius="8" BorderBrush="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Grid Margin="-400,-31,-400,-31">
                 <FontIcon Glyph="&#xE119;" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="32" Margin="26,0,0,0"/>
                 <TextBlock Text="Invite friends to join" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="76,0,0,0"/>
@@ -25,6 +25,8 @@
                     <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
                     <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
                     <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
                 </ResourceDictionary>
             </Button.Resources>
         </Button>

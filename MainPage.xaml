@@ -24,6 +24,8 @@
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
                         <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
@@ -38,6 +40,8 @@
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
                         <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
@@ -52,6 +56,8 @@
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
                         <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
@@ -66,6 +72,8 @@
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
                         <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
@@ -80,6 +88,8 @@
                         <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
                         <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
                         <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>

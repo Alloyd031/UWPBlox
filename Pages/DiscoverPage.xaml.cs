@@ -35,6 +35,10 @@ namespace UWPBlox.Pages
         {
             this.Frame.Navigate(typeof(RecommendedForYou));
         }
+        private void MostEngagingButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MostEngaging));
+        }
         private void SomeCoolGameInfo_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GameInfo));

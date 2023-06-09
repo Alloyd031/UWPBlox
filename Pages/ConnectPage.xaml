@@ -16,10 +16,34 @@
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
             <Button x:Name="SearchButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE721;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
             <AppBarSeparator/>
             <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
         </StackPanel>
         <ScrollViewer Margin="0,73,0,0">

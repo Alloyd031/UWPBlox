@@ -15,105 +15,257 @@
         </Grid>
         <ScrollViewer Margin="0,73,0,0">
             <Grid Height="654" Width="990">
-                <Button Height="194" Width="194" VerticalAlignment="Top">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="195">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Marketplace" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="199,0,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,0,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEB95;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Premium" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="398,0,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="398,0,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEA8C;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Profile" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="597,0,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,0,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE125;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Friends" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="796,0,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,0,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE902;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Groups" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="0,199,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,199,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE821;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Inventory" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="199,199,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,199,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE15F;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Messages" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="0,199,0,0" HorizontalAlignment="Center">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,199,0,0" HorizontalAlignment="Center">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE943;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Create" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="597,199,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,199,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE8A1;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Blog" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="796,398,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,398,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE72E;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Quick Log In" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="199,398,0,0" Click="Settings_Click">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,398,0,0" Click="Settings_Click">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE713;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Settings" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="0,398,0,0" HorizontalAlignment="Center" Click="About_Click">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,398,0,0" HorizontalAlignment="Center" Click="About_Click">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE946;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="About" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="0,398,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,398,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7BF;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Official Store" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="597,398,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,398,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE11B;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Help" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" VerticalAlignment="Top" Margin="796,199,0,0">
+                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,199,0,0">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF133;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Gift Cards" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
                     </Grid>
-                </Button>
-                <Button Content="Log Out" Width="640" Height="40" FontSize="20" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top">
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#797A7A"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                        </ResourceDictionary>
+                    </Button.Resources>
+                </Button>
+                <Button Content="Log Out" Width="640" Height="40" CornerRadius="8" FontSize="20" BorderBrush="#BCBDBE" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top">
+                    <Button.Resources>
+                        <ResourceDictionary>
+                            <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                            <SolidColorBrush x:Key="ButtonForeground" Color="#BDBEBF"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FEFEFE"/>
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#6F7071"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FDFEFE"/>
+                            <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#707172"/>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -122,10 +274,34 @@
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
             <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
             <AppBarSeparator/>
             <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                    </ResourceDictionary>
+                </Button.Resources>
             </Button>
         </StackPanel>
     </Grid>
