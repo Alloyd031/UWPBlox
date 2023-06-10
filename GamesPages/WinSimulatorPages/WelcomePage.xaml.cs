@@ -20,9 +20,9 @@ namespace UWPBlox.GamesPages.WinSimulatorPages
     /// <summary>
     /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
-    public sealed partial class Welcome : Page
+    public sealed partial class WelcomePage : Page
     {
-        public Welcome()
+        public WelcomePage()
         {
             this.InitializeComponent();
         }

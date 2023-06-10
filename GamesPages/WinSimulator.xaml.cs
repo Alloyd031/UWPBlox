@@ -40,7 +40,7 @@ namespace UWPBlox.GamesPages
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            this.GameFrame.Navigate(typeof(Welcome));
+            this.GameFrame.Navigate(typeof(WelcomePage));
         }
     }
 }

@@ -140,8 +140,8 @@
     <Compile Include="GamesPages\WinSimulator.xaml.cs">
       <DependentUpon>WinSimulator.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GamesPages\WinSimulatorPages\Welcome.xaml.cs">
-      <DependentUpon>Welcome.xaml</DependentUpon>
+    <Compile Include="GamesPages\WinSimulatorPages\WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -259,7 +259,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GamesPages\WinSimulatorPages\Welcome.xaml">
+    <Page Include="GamesPages\WinSimulatorPages\WelcomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
