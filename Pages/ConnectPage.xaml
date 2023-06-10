@@ -14,8 +14,7 @@
             <TextBlock Text="Connect" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0"/>
         </Grid>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
-            <Button x:Name="SearchButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
-                    PointerEntered="SearchButton_PointerEntered" PointerExited="SearchButton_PointerExited">
+            <Button x:Name="SearchButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE721;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -31,8 +30,7 @@
                 </Button.Resources>
             </Button>
             <AppBarSeparator/>
-            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
-                    PointerEntered="NotificationsButton_PointerEntered" PointerExited="NotificationsButton_PointerExited">
+            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
                 <Button.Resources>
                     <ResourceDictionary>

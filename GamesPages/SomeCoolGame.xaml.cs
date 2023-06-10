@@ -37,53 +37,5 @@ namespace UWPBlox.GamesPages
             Menu dialog = new Menu();
             await dialog.ShowAsync();
         }
-        private void Menu_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void Menu_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
-        private void Messages_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void Messages_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
-        private void More_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void More_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
-        private void Leaderboard_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void Leaderboard_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
-        private void Emotes_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void Emotes_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
-        private void Invertory_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void Invertory_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
     }
 }

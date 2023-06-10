@@ -28,8 +28,7 @@
             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBlock Text="NOT_IMPLEMENTED" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
         </Grid>
-        <Button x:Name="OKButton" Content="OK" CornerRadius="8" BorderBrush="Transparent" Width="70" Height="44" FontSize="20" Click="OKButton_Click" Margin="370,196,0,0" VerticalAlignment="Top"
-                PointerEntered="OKButton_PointerEntered" PointerExited="OKButton_PointerExited">
+        <Button x:Name="OKButton" Content="OK" CornerRadius="8" BorderBrush="Transparent" Width="70" Height="44" FontSize="20" Click="OKButton_Click" Margin="370,196,0,0" VerticalAlignment="Top">
             <Button.Resources>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>

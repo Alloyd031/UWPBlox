@@ -33,14 +33,6 @@ namespace UWPBlox.Pages
         {
             this.Frame.GoBack();
         }
-        private void BackButton_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void BackButton_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
         private void SomeCoolGameInfo_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GameInfo));
@@ -70,22 +62,6 @@ namespace UWPBlox.Pages
                 GameIcon.Glyph = "\uEC4E";
                 GameDescription.Text = "Simulate your favorite OS!";
             }
-        }
-        private void SomeCoolGame_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void SomeCoolGame_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
-        private void WinSimulator_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void WinSimulator_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
         }
     }
 }

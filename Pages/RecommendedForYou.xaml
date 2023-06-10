@@ -22,8 +22,7 @@
 					Background="Transparent"
 					BorderBrush="Transparent"
 					Click="BackButton_Click"
-				    Margin="10,10,0,0" VerticalAlignment="Top"
-                    PointerEntered="BackButton_PointerEntered" PointerExited="BackButton_PointerExited">
+				    Margin="10,10,0,0" VerticalAlignment="Top">
                 <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
                     <muxc:AnimatedIcon.FallbackIconSource>
                         <muxc:SymbolIconSource Symbol="Back"/>
@@ -43,8 +42,7 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Button x:Name="SomeCoolGame" Height="194" Width="194" Margin="10,78,0,0" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click"
-                PointerEntered="SomeCoolGame_PointerEntered" PointerExited="SomeCoolGame_PointerExited">
+        <Button x:Name="SomeCoolGame" Height="194" Width="194" Margin="10,78,0,0" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <TextBlock Text="Some Cool Game :3" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
@@ -60,8 +58,7 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Button x:Name="WinSimulator" Height="194" Width="194" Margin="209,78,0,0" VerticalAlignment="Top" Click="WinSimulatorInfo_Click"
-                PointerEntered="WinSimulator_PointerEntered" PointerExited="WinSimulator_PointerExited">
+        <Button x:Name="WinSimulator" Height="194" Width="194" Margin="209,78,0,0" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
             <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <TextBlock Text="WinSimulator" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>

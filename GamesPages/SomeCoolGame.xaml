@@ -13,8 +13,7 @@
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="56" VerticalAlignment="Top"/>
         <StackPanel x:Name="LeftItems" Orientation="Horizontal" Margin="0,6,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,0,0,0">
-            <Button x:Name="Menu" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent" Click="Menu_Click"
-                    PointerEntered="Menu_PointerEntered" PointerExited="Menu_PointerExited">
+            <Button x:Name="Menu" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent" Click="Menu_Click">
                 <FontIcon Glyph="&#xE700;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -29,8 +28,7 @@
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Messages" Width="44" Height="44" Margin="10,0,0,0" CornerRadius="0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top"
-                    PointerEntered="Messages_PointerEntered" PointerExited="Messages_PointerExited">
+            <Button x:Name="Messages" Width="44" Height="44" Margin="10,0,0,0" CornerRadius="0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top">
                 <FontIcon Glyph="&#xE8F2;"/>
                 <Button.Flyout>
                     <Flyout Placement="BottomEdgeAlignedLeft">
@@ -67,14 +65,12 @@
             </Button>
         </StackPanel>
         <StackPanel x:Name="RightItems" Orientation="Horizontal" Margin="0,6,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,0,190,0">
-            <Button x:Name="More" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent"
-                    PointerEntered="More_PointerEntered" PointerExited="More_PointerExited">
+            <Button x:Name="More" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon Glyph="&#xE10C;"/>
                 <Button.Flyout>
                     <Flyout Placement="BottomEdgeAlignedRight">
                         <Grid Width="276" Background="#121314">
-                            <Button x:Name="Leaderboard" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" VerticalAlignment="Top"
-                                    PointerEntered="Leaderboard_PointerEntered" PointerExited="Leaderboard_PointerExited">
+                            <Button x:Name="Leaderboard" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" VerticalAlignment="Top">
                                 <Grid Margin="-138,-27,-138,-28">
                                     <FontIcon Glyph="&#xECA7;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
                                     <TextBlock Text="Leaderboard" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>
@@ -91,8 +87,7 @@
                                 </Button.Resources>
                             </Button>
                             <MenuFlyoutSeparator Background="White" VerticalAlignment="Top" Margin="0,52,0,0"/>
-                            <Button x:Name="Emotes" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top"
-                                    PointerEntered="Emotes_PointerEntered" PointerExited="Emotes_PointerExited">
+                            <Button x:Name="Emotes" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top">
                                 <Grid Margin="-138,-27,-138,-28">
                                     <FontIcon Glyph="&#xED54;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
                                     <TextBlock Text="Emotes" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>
@@ -109,8 +104,7 @@
                                 </Button.Resources>
                             </Button>
                             <MenuFlyoutSeparator Background="White" VerticalAlignment="Top" Margin="0,107,0,0"/>
-                            <Button x:Name="Invertory" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top"
-                                    PointerEntered="Invertory_PointerEntered" PointerExited="Invertory_PointerExited">
+                            <Button x:Name="Invertory" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top">
                                 <Grid Margin="-138,-27,-138,-28">
                                     <FontIcon Glyph="&#xE821;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
                                     <TextBlock Text="Invertory" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>

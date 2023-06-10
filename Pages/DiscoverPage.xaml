@@ -16,8 +16,7 @@
         <ScrollViewer Margin="0,73,0,0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden">
             <Grid x:Name="GamesGrid">
                 <Grid VerticalAlignment="Top" Height="268">
-                    <Button x:Name="MostEngagingButton" Background="Transparent" BorderBrush="Transparent" Height="48" VerticalAlignment="Top" Width="275" Margin="10,10,0,0" Click="MostEngagingButton_Click"
-                            PointerEntered="MostEngagingButton_PointerEntered" PointerExited="MostEngagingButton_PointerExited">
+                    <Button x:Name="MostEngagingButton" Background="Transparent" BorderBrush="Transparent" Height="48" VerticalAlignment="Top" Width="275" Margin="10,10,0,0" Click="MostEngagingButton_Click">
                         <Grid Margin="-138,-23,-137,-24">
                             <TextBlock Text="Most Engaging" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Normal" FontSize="20" Margin="10,8,0,0"/>
                             <FontIcon Glyph="&#xE111;" Margin="243,0,0,0" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -36,8 +35,7 @@
                         </Button.Resources>
                     </Button>
                     <StackPanel HorizontalAlignment="Left" Padding="10,0,0,0">
-                        <Button x:Name="MostEngagingBackButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top"
-                            PointerEntered="MostEngagingBackButton_PointerEntered" PointerExited="MostEngagingBackButton_PointerExited">
+                        <Button x:Name="MostEngagingBackButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top">
                             <FontIcon Glyph="&#xE72B;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Button.Resources>
                                 <ResourceDictionary>
@@ -55,8 +53,7 @@
                     </StackPanel>
                     <TextBlock Text="No games here." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
                     <StackPanel HorizontalAlignment="Right" Padding="0,0,10,0">
-                        <Button x:Name="MostEngagingNextButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top"
-                            PointerEntered="MostEngagingNextButton_PointerEntered" PointerExited="MostEngagingNextButton_PointerExited">
+                        <Button x:Name="MostEngagingNextButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top">
                             <FontIcon Glyph="&#xE111;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Button.Resources>
                                 <ResourceDictionary>
@@ -74,8 +71,7 @@
                     </StackPanel>
                 </Grid>
                 <Grid Margin="0,268,0,0" VerticalAlignment="Top" Height="268">
-                    <Button x:Name="RecommendedForYouButton" Background="Transparent" BorderBrush="Transparent" Height="48" VerticalAlignment="Top" Width="275" Margin="10,10,0,0" Click="RecommendedForYouButton_Click"
-                            PointerEntered="RecommendedForYouButton_PointerEntered" PointerExited="RecommendedForYouButton_PointerExited">
+                    <Button x:Name="RecommendedForYouButton" Background="Transparent" BorderBrush="Transparent" Height="48" VerticalAlignment="Top" Width="275" Margin="10,10,0,0" Click="RecommendedForYouButton_Click">
                         <Grid Margin="-138,-23,-137,-24">
                             <TextBlock Text="Recommended For You" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Normal" FontSize="20" Margin="10,8,0,0"/>
                             <FontIcon Glyph="&#xE111;" Margin="243,0,0,0" FontSize="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
@@ -94,8 +90,7 @@
                         </Button.Resources>
                     </Button>
                     <StackPanel HorizontalAlignment="Left" Padding="10,0,0,0">
-                        <Button x:Name="RecommendedForYouBackButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top"
-                            PointerEntered="RecommendedForYouBackButton_PointerEntered" PointerExited="RecommendedForYouBackButton_PointerExited">
+                        <Button x:Name="RecommendedForYouBackButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top">
                             <FontIcon Glyph="&#xE72B;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Button.Resources>
                                 <ResourceDictionary>
@@ -112,8 +107,7 @@
                         </Button>
                     </StackPanel>
                     <StackPanel HorizontalAlignment="Right" Padding="0,0,10,0">
-                        <Button x:Name="RecommendedForYouNextButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top"
-                            PointerEntered="RecommendedForYouNextButton_PointerEntered" PointerExited="RecommendedForYouNextButton_PointerExited">
+                        <Button x:Name="RecommendedForYouNextButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top">
                             <FontIcon Glyph="&#xE111;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Button.Resources>
                                 <ResourceDictionary>
@@ -129,8 +123,7 @@
                             </Button.Resources>
                         </Button>
                     </StackPanel>
-                    <Button x:Name="SomeCoolGame" Height="194" Width="194" Margin="59,64,0,0" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click"
-                            PointerEntered="SomeCoolGame_PointerEntered" PointerExited="SomeCoolGame_PointerExited">
+                    <Button x:Name="SomeCoolGame" Height="194" Width="194" Margin="59,64,0,0" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
                         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                             <TextBlock Text="Some Cool Game :3" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>
@@ -146,8 +139,7 @@
                             </ResourceDictionary>
                         </Button.Resources>
                     </Button>
-                    <Button x:Name="WinSimulator" Height="194" Width="194" Margin="258,64,0,0" VerticalAlignment="Top" Click="WinSimulatorInfo_Click"
-                            PointerEntered="WinSimulator_PointerEntered" PointerExited="WinSimulator_PointerExited">
+                    <Button x:Name="WinSimulator" Height="194" Width="194" Margin="258,64,0,0" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
                         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                             <TextBlock Text="WinSimulator" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,55,0,0"/>

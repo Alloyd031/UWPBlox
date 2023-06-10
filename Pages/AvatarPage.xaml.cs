@@ -31,13 +31,5 @@ namespace UWPBlox.Pages
             Window.Current.SetTitleBar(AppTitleBar);
             CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
         }
-        private void RobuxBalance_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void RobuxBalance_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
-        }
     }
 }

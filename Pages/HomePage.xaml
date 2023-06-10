@@ -15,8 +15,7 @@
         </Grid>
         <AutoSuggestBox PlaceholderText="Search" QueryIcon="Find" VerticalContentAlignment="Center" Background="#151618" Foreground="White" CornerRadius="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="15" HorizontalAlignment="Center" Width="400" Height="36" Margin="0,19,0,0"/>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
-            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
-                    PointerEntered="RobuxButton_PointerEntered" PointerExited="RobuxButton_PointerExited">
+            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -32,8 +31,7 @@
                 </Button.Resources>
             </Button>
             <AppBarSeparator/>
-            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
-                    PointerEntered="NotificationsButton_PointerEntered" PointerExited="NotificationsButton_PointerExited">
+            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -53,8 +51,7 @@
             <Grid>
                 <Grid VerticalAlignment="Top" Height="210">
                     <TextBlock Text="Friends" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" Margin="17,13,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                    <Button x:Name="AddFriends" Background="Transparent" BorderBrush="Transparent" Height="141" Width="146" Margin="17,51,0,0" VerticalAlignment="Top" Click="AddFriends_Click"
-                        PointerEntered="AddFriends_PointerEntered" PointerExited="AddFriends_PointerExited">
+                    <Button x:Name="AddFriends" Background="Transparent" BorderBrush="Transparent" Height="141" Width="146" Margin="17,51,0,0" VerticalAlignment="Top" Click="AddFriends_Click">
                         <Grid Margin="-73,-70,-73,-71">
                             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE125;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <TextBlock Text="Add Friends" FontWeight="Black" FontSize="17" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,112,0,0"/>
@@ -74,8 +71,7 @@
                     </Button>
                     <TextBlock Text="You currently have no friends." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
                     <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,13,17,0">
-                        <Button x:Name="Friends_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top"
-                        PointerEntered="Friends_SeeAll_PointerEntered" PointerExited="Friends_SeeAll_PointerExited" Click="Friends_SeeAll_Click">
+                        <Button x:Name="Friends_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top" Click="Friends_SeeAll_Click">
                             <Button.Resources>
                                 <ResourceDictionary>
                                     <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
@@ -93,13 +89,11 @@
                 </Grid>
                 <Grid VerticalAlignment="Top" Height="360" Margin="0,210,0,0">
                     <TextBlock Text="Continue" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
-                    <Button x:Name="SomeCoolGame" Height="275" Width="194" Margin="10,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click"
-                        PointerEntered="SomeCoolGame_PointerEntered" PointerExited="SomeCoolGame_PointerExited">
+                    <Button x:Name="SomeCoolGame" Height="275" Width="194" Margin="10,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
                         <Grid Margin="-97,-137,-97,-138">
                             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,69,0,0"/>
                             <TextBlock Text="Some Cool Game :3" FontWeight="Normal" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <Button x:Name="PlayCoolGameButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayCoolGameButton_Click"
-                                PointerEntered="PlayCoolGameButton_PointerEntered">
+                            <Button x:Name="PlayCoolGameButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayCoolGameButton_Click">
                                 <Grid Margin="-89,-18,-88,-18">
                                     <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Grid>
@@ -128,13 +122,11 @@
                             </ResourceDictionary>
                         </Button.Resources>
                     </Button>
-                    <Button x:Name="WinSimulator" Height="275" Width="194" Margin="217,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="WinSimulatorInfo_Click"
-                        PointerEntered="WinSimulator_PointerEntered" PointerExited="WinSimulator_PointerExited">
+                    <Button x:Name="WinSimulator" Height="275" Width="194" Margin="217,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
                         <Grid Margin="-97,-137,-97,-138">
                             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,67,0,0"/>
                             <TextBlock Text="WinSimulator" FontWeight="Normal" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <Button x:Name="PlayWinSimulatorButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayWinSimulatorButton_Click"
-                                PointerEntered="PlayWinSimulatorButton_PointerEntered">
+                            <Button x:Name="PlayWinSimulatorButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayWinSimulatorButton_Click">
                                 <Grid Margin="-89,-18,-88,-18">
                                     <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Grid>
@@ -164,8 +156,7 @@
                         </Button.Resources>
                     </Button>
                     <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,13,17,0">
-                        <Button x:Name="Continue_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top"
-                        PointerEntered="Continue_SeeAll_PointerEntered" PointerExited="Continue_SeeAll_PointerExited" Click="Continue_SeeAll_Click">
+                        <Button x:Name="Continue_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top" Click="Continue_SeeAll_Click">
                             <Button.Resources>
                                 <ResourceDictionary>
                                     <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>

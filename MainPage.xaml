@@ -14,7 +14,7 @@
     <Grid>
         <Grid x:Name="PagesPanel" Background="#191B1D" Width="64" Grid.RowSpan="4" HorizontalAlignment="Left">
             <Button x:Name="HomeButton" Height="44" Width="44" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="HomeButton_Click" PointerEntered="HomeButton_PointerEntered" PointerExited="HomeButton_PointerExited">
+                    Background="Transparent" BorderBrush="Transparent" Click="HomeButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE10F;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -30,7 +30,7 @@
                 </Button.Resources>
             </Button>
             <Button x:Name="DiscoverButton" Height="44" Width="44" Margin="0,59,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="DiscoverButton_Click" PointerEntered="DiscoverButton_PointerEntered" PointerExited="DiscoverButton_PointerExited">
+                    Background="Transparent" BorderBrush="Transparent" Click="DiscoverButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE102;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -46,7 +46,7 @@
                 </Button.Resources>
             </Button>
             <Button x:Name="AvatarButton" Height="44" Width="44" Margin="0,108,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="AvatarButton_Click" PointerEntered="AvatarButton_PointerEntered" PointerExited="AvatarButton_PointerExited">
+                    Background="Transparent" BorderBrush="Transparent" Click="AvatarButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE13D;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -62,7 +62,7 @@
                 </Button.Resources>
             </Button>
             <Button x:Name="ConnectButton" Height="44" Width="44" Margin="0,157,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="ConnectButton_Click" PointerEntered="ConnectButton_PointerEntered" PointerExited="ConnectButton_PointerExited">
+                    Background="Transparent" BorderBrush="Transparent" Click="ConnectButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE15F;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -78,7 +78,7 @@
                 </Button.Resources>
             </Button>
             <Button x:Name="MoreButton" Height="44" Width="44" Margin="0,206,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" Click="MoreButton_Click" PointerEntered="MoreButton_PointerEntered" PointerExited="MoreButton_PointerExited">
+                    Background="Transparent" BorderBrush="Transparent" Click="MoreButton_Click">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE10C;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -95,7 +95,7 @@
             </Button>
             <StackPanel Padding="0,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Center">
                 <Button x:Name="StudioButton" Height="44" Width="44" VerticalAlignment="Top" HorizontalAlignment="Center"
-                    Background="Transparent" BorderBrush="Transparent" PointerEntered="StudioButton_PointerEntered" PointerExited="StudioButton_PointerExited" Click="StudioButton_Click">
+                    Background="Transparent" BorderBrush="Transparent" Click="StudioButton_Click">
                     <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE15E;"/>
                     <Button.Resources>
                         <ResourceDictionary>

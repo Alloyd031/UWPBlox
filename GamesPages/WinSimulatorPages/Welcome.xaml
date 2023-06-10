@@ -13,8 +13,7 @@
         <Grid Width="1024" Height="768" VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock Text="Welcome!" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0"/>
             <TextBlock Text="Select your favorite OS!" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,120,0,0"/>
-            <Button x:Name="WinXP" Content="Windows XP" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,248,0,0" VerticalAlignment="Top" Width="350"
-                    PointerEntered="WinXP_PointerEntered" PointerExited="WinXP_PointerExited">
+            <Button x:Name="WinXP" Content="Windows XP" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,248,0,0" VerticalAlignment="Top" Width="350">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -41,8 +40,7 @@
                     </Flyout>
                 </Button.Flyout>
             </Button>
-            <Button x:Name="WinVista" Content="Windows Vista" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,306,0,0" VerticalAlignment="Top" Width="350"
-                    PointerEntered="WinVista_PointerEntered" PointerExited="WinVista_PointerExited">
+            <Button x:Name="WinVista" Content="Windows Vista" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,306,0,0" VerticalAlignment="Top" Width="350">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -69,8 +67,7 @@
                     </Flyout>
                 </Button.Flyout>
             </Button>
-            <Button x:Name="Win7" Content="Windows 7" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,364,0,0" VerticalAlignment="Top" Width="350"
-                    PointerEntered="Win7_PointerEntered" PointerExited="Win7_PointerExited">
+            <Button x:Name="Win7" Content="Windows 7" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,364,0,0" VerticalAlignment="Top" Width="350">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -97,8 +94,7 @@
                     </Flyout>
                 </Button.Flyout>
             </Button>
-            <Button x:Name="Win80" Content="Windows 8.0" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,422,0,0" VerticalAlignment="Top" Width="350"
-                    PointerEntered="Win80_PointerEntered" PointerExited="Win80_PointerExited">
+            <Button x:Name="Win80" Content="Windows 8.0" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,422,0,0" VerticalAlignment="Top" Width="350">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -125,8 +121,7 @@
                     </Flyout>
                 </Button.Flyout>
             </Button>
-            <Button x:Name="Win81" Content="Windows 8.1" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,480,0,0" VerticalAlignment="Top" Width="350"
-                    PointerEntered="Win81_PointerEntered" PointerExited="Win81_PointerExited">
+            <Button x:Name="Win81" Content="Windows 8.1" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,480,0,0" VerticalAlignment="Top" Width="350">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -153,8 +148,7 @@
                     </Flyout>
                 </Button.Flyout>
             </Button>
-            <Button x:Name="Win10" Content="Windows 10" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,538,0,0" VerticalAlignment="Top" Width="350"
-                    PointerEntered="Win10_PointerEntered" PointerExited="Win10_PointerExited">
+            <Button x:Name="Win10" Content="Windows 10" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,538,0,0" VerticalAlignment="Top" Width="350">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -181,8 +175,7 @@
                     </Flyout>
                 </Button.Flyout>
             </Button>
-            <Button x:Name="Win11" Content="Windows 11" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,596,0,0" VerticalAlignment="Top" Width="350"
-                    PointerEntered="Win11_PointerEntered" PointerExited="Win11_PointerExited">
+            <Button x:Name="Win11" Content="Windows 11" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,596,0,0" VerticalAlignment="Top" Width="350">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
