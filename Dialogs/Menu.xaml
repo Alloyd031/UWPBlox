@@ -27,7 +27,8 @@
 			HorizontalAlignment="Stretch"
 			VerticalAlignment="Stretch">
         <Grid Margin="23,0,23,652" HorizontalAlignment="Center">
-            <Button Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Click="People_Click">
+            <Button x:Name="PeopleTab" Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Click="People_Click"
+                    PointerEntered="PeopleTab_PointerEntered" PointerExited="PeopleTab_PointerExited">
                 <Grid Margin="-73,-30,-73,-30">
                     <FontIcon Glyph="&#xE125;" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1"/>
                     <TextBlock Text="People" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Margin="54,0,0,0"/>
@@ -45,7 +46,8 @@
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
-            <Button Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Margin="151,0,0,0" Click="Settings_Click">
+            <Button x:Name="SettingsTab" Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Margin="151,0,0,0" Click="Settings_Click"
+                    PointerEntered="SettingsTab_PointerEntered" PointerExited="SettingsTab_PointerExited">
                 <Grid Margin="-73,-30,-73,-30">
                     <FontIcon Glyph="&#xE713;" FontSize="28" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,16,0,0" Grid.RowSpan="2"/>
                     <TextBlock Text="Settings" FontSize="18" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="54,18,0,0" Grid.RowSpan="2"/>
@@ -63,7 +65,8 @@
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
-            <Button Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Margin="302,0,0,0" Click="Report_Click">
+            <Button x:Name="ReportTab" Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Margin="302,0,0,0" Click="Report_Click"
+                    PointerEntered="ReportTab_PointerEntered" PointerExited="ReportTab_PointerExited">
                 <Grid Margin="-73,-30,-73,-30">
                     <FontIcon Glyph="&#xED15;" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1"/>
                     <TextBlock Text="Report" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Margin="54,0,0,0"/>
@@ -81,7 +84,8 @@
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
-            <Button Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Margin="453,0,0,0" Click="Help_Click">
+            <Button x:Name="HelpTab" Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Margin="453,0,0,0" Click="Help_Click"
+                    PointerEntered="HelpTab_PointerEntered" PointerExited="HelpTab_PointerExited">
                 <Grid Margin="-73,-30,-73,-30">
                     <FontIcon Glyph="&#xE11B;" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1"/>
                     <TextBlock Text="Help" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Margin="54,0,0,0"/>
@@ -99,7 +103,8 @@
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
-            <Button Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Margin="604,0,0,0" Click="Record_Click">
+            <Button x:Name="RecordTab" Width="146" Height="60" CornerRadius="8" BorderBrush="Transparent" Margin="604,0,0,0" Click="Record_Click"
+                    PointerEntered="RecordTab_PointerEntered" PointerExited="RecordTab_PointerExited">
                 <Grid Margin="-73,-30,-73,-30">
                     <FontIcon Glyph="&#xE7C8;" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1"/>
                     <TextBlock Text="Record" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Margin="54,0,0,0"/>
@@ -121,7 +126,8 @@
         <ScrollViewer Margin="0,78,0,82" Width="800" Height="569" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Disabled">
             <Frame x:Name="ContentFrame"/>
         </ScrollViewer>
-        <Button x:Name="ResetCharacter" Content="Reset Character" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" Margin="10,658,0,0" VerticalAlignment="Top" Click="ResetCharacter_Click">
+        <Button x:Name="ResetCharacter" Content="Reset Character" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" Margin="10,658,0,0" VerticalAlignment="Top" Click="ResetCharacter_Click"
+                PointerEntered="ResetCharacter_PointerEntered" PointerExited="ResetCharacter_PointerExited">
             <Button.Resources>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -135,7 +141,8 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Button x:Name="Leave" Content="Leave" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" Margin="0,658,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Leave_Click">
+        <Button x:Name="Leave" Content="Leave" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" Margin="0,658,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="Leave_Click"
+                PointerEntered="Leave_PointerEntered" PointerExited="Leave_PointerExited">
             <Button.Resources>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -149,7 +156,8 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Button x:Name="Resume" Content="Resume" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" Margin="538,658,0,0" VerticalAlignment="Top" Click="Resume_Click">
+        <Button x:Name="Resume" Content="Resume" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" Margin="538,658,0,0" VerticalAlignment="Top" Click="Resume_Click"
+                PointerEntered="Resume_PointerEntered" PointerExited="Resume_PointerExited">
             <Button.Resources>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>

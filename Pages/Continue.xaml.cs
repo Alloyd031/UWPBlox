@@ -6,8 +6,6 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.UI.ViewManagement;
-using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -16,16 +14,16 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
+// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace UWPBlox.Pages
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
-    public sealed partial class RecommendedForYou : Page
+    public sealed partial class Continue : Page
     {
-        public RecommendedForYou()
+        public Continue()
         {
             this.InitializeComponent();
             Window.Current.SetTitleBar(AppTitleBar);
@@ -34,6 +32,14 @@ namespace UWPBlox.Pages
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.GoBack();
+        }
+        private void BackButton_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void BackButton_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
         }
         private void SomeCoolGameInfo_Click(object sender, RoutedEventArgs e)
         {
@@ -64,14 +70,6 @@ namespace UWPBlox.Pages
                 GameIcon.Glyph = "\uEC4E";
                 GameDescription.Text = "Simulate your favorite OS!";
             }
-        }
-        private void BackButton_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
-        }
-        private void BackButton_PointerExited(object sender, PointerRoutedEventArgs e)
-        {
-            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
         }
         private void SomeCoolGame_PointerEntered(object sender, PointerRoutedEventArgs e)
         {

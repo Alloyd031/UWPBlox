@@ -28,5 +28,13 @@ namespace UWPBlox.Dialogs
         {
             Hide();
         }
+        private void OKButton_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void OKButton_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
     }
 }

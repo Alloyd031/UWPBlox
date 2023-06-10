@@ -22,7 +22,8 @@
 					Background="Transparent"
 					BorderBrush="Transparent"
 					Click="BackButton_Click"
-				    Margin="10,10,0,0" VerticalAlignment="Top">
+				    Margin="10,10,0,0" VerticalAlignment="Top"
+                    PointerEntered="BackButton_PointerEntered" PointerExited="BackButton_PointerExited">
             <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
                 <muxc:AnimatedIcon.Source>
                     <animatedvisuals:AnimatedBackVisualSource/>
@@ -45,7 +46,8 @@
             </Button.Resources>
         </Button>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
-            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
+            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
+                    PointerEntered="RobuxButton_PointerEntered" PointerExited="RobuxButton_PointerExited">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -61,7 +63,8 @@
                 </Button.Resources>
             </Button>
             <AppBarSeparator/>
-            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
+            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
+                    PointerEntered="NotificationsButton_PointerEntered" PointerExited="NotificationsButton_PointerExited">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -78,7 +81,8 @@
             </Button>
         </StackPanel>
         <Grid Width="500" VerticalAlignment="Top" Height="425" Margin="500,95,500,0">
-            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button x:Name="AccountInfo" Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top"
+                    PointerEntered="AccountInfo_PointerEntered" PointerExited="AccountInfo_PointerExited">
                 <Grid Margin="-250,-30,-250,-30">
                     <TextBlock Text="Account Info" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
                     <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
@@ -97,7 +101,8 @@
                 </Button.Resources>
             </Button>
             <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,65,0,0"/>
-            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top">
+            <Button x:Name="Security" Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,73,0,0" VerticalAlignment="Top"
+                    PointerEntered="Security_PointerEntered" PointerExited="Security_PointerExited">
                 <Grid Margin="-250,-30,-250,-30">
                     <TextBlock Text="Security" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
                     <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
@@ -116,7 +121,8 @@
                 </Button.Resources>
             </Button>
             <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,138,0,0"/>
-            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,146,0,0" VerticalAlignment="Top">
+            <Button x:Name="Privacy" Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,146,0,0" VerticalAlignment="Top"
+                    PointerEntered="Privacy_PointerEntered" PointerExited="Privacy_PointerExited">
                 <Grid Margin="-250,-30,-250,-30">
                     <TextBlock Text="Privacy" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
                     <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
@@ -135,7 +141,8 @@
                 </Button.Resources>
             </Button>
             <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,211,0,0"/>
-            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top">
+            <Button x:Name="PaternalControls" Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,219,0,0" VerticalAlignment="Top"
+                    PointerEntered="PaternalControls_PointerEntered" PointerExited="PaternalControls_PointerExited">
                 <Grid Margin="-250,-30,-250,-30">
                     <TextBlock Text="Paternal Controls" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
                     <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
@@ -154,7 +161,8 @@
                 </Button.Resources>
             </Button>
             <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,284,0,0"/>
-            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,292,0,0" VerticalAlignment="Top">
+            <Button x:Name="Billing" Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,292,0,0" VerticalAlignment="Top"
+                    PointerEntered="Billing_PointerEntered" PointerExited="Billing_PointerExited">
                 <Grid Margin="-250,-30,-250,-30">
                     <TextBlock Text="Billing" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
                     <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>
@@ -173,7 +181,8 @@
                 </Button.Resources>
             </Button>
             <MenuFlyoutSeparator VerticalAlignment="Top" Margin="0,357,0,0"/>
-            <Button Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top">
+            <Button x:Name="Notifications" Width="500" Height="60" Background="Transparent" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top"
+                    PointerEntered="Notifications_PointerEntered" PointerExited="Notifications_PointerExited">
                 <Grid Margin="-250,-30,-250,-30">
                     <TextBlock Text="Notifications" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
                     <FontIcon Glyph="&#xE111;" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="465,0,0,0"/>

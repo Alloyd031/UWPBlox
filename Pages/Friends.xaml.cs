@@ -21,9 +21,9 @@ namespace UWPBlox.Pages
     /// <summary>
     /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
-    public sealed partial class MostEngaging : Page
+    public sealed partial class Friends : Page
     {
-        public MostEngaging()
+        public Friends()
         {
             this.InitializeComponent();
             Window.Current.SetTitleBar(AppTitleBar);

@@ -15,7 +15,8 @@
         <Grid VerticalAlignment="Top">
             <TextBlock Text="Screenshot" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="10,10,0,0"/>
             <TextBlock Text="By clicking the 'Take Screenshot' button, the menu will close and take a screenshot and save it to your computer." HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="25" Margin="0,55,0,0" Width="781"/>
-            <Button x:Name="TakeScreenshotButton" Content="Take Screenshot" CornerRadius="8" BorderBrush="Transparent" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top">
+            <Button x:Name="TakeScreenshotButton" Content="Take Screenshot" CornerRadius="8" BorderBrush="Transparent" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top"
+                    PointerEntered="TakeScreenshotButton_PointerEntered" PointerExited="TakeScreenshotButton_PointerExited">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -33,7 +34,8 @@
         <Grid VerticalAlignment="Top" Margin="0,187,0,0">
             <TextBlock Text="Video" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="10,10,0,0"/>
             <TextBlock Text="By clicking the 'Record Video' button, the menu will close and start recording your screen." HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="25" Margin="0,55,0,0" Width="781"/>
-            <Button Content="Record Video" CornerRadius="8" BorderBrush="Transparent" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top">
+            <Button x:Name="RecordVideo" Content="Record Video" CornerRadius="8" BorderBrush="Transparent" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top"
+                    PointerEntered="RecordVideo_PointerEntered" PointerExited="RecordVideo_PointerExited">
                 <Button.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>

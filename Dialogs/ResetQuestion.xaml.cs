@@ -36,5 +36,22 @@ namespace UWPBlox.Dialogs
             Menu dialog = new Menu();
             await dialog.ShowAsync();
         }
+
+        private void Reset_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void Reset_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private void DontReset_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void DontReset_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
     }
 }

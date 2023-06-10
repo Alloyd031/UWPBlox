@@ -97,5 +97,77 @@ namespace UWPBlox.Pages
                 GameDescription.Text = "Just a cool game, what else? :3";
             }
         }
+        private void NotificationsButton_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void NotificationsButton_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private void RobuxButton_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void RobuxButton_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private void AddFriends_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void AddFriends_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private void SomeCoolGame_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void SomeCoolGame_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private void PlayCoolGameButton_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void WinSimulator_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void WinSimulator_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private void PlayWinSimulatorButton_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void Continue_SeeAll_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void Continue_SeeAll_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private void Friends_SeeAll_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Hand, 1);
+        }
+        private void Friends_SeeAll_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            Windows.UI.Xaml.Window.Current.CoreWindow.PointerCursor = new Windows.UI.Core.CoreCursor(Windows.UI.Core.CoreCursorType.Arrow, 1);
+        }
+        private void Friends_SeeAll_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Friends));
+        }
+        private void Continue_SeeAll_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Continue));
+        }
     }
 }

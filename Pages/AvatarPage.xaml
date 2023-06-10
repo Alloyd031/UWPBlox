@@ -15,7 +15,8 @@
         </Grid>
         <AutoSuggestBox PlaceholderText="Search marketplace" QueryIcon="Find" Background="#151517" Foreground="White" CornerRadius="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="15" HorizontalAlignment="Center" Width="399" Height="36" Margin="0,21,0,0"/>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
-            <Button x:Name="RobuxBalance" Height="40" Width="58" Background="Transparent" BorderBrush="Transparent">
+            <Button x:Name="RobuxBalance" Height="40" Width="58" Background="Transparent" BorderBrush="Transparent"
+                    PointerEntered="RobuxBalance_PointerEntered" PointerExited="RobuxBalance_PointerExited">
                 <Grid Margin="-29,-20,-29,-20">
                     <FontIcon FontFamily="Segoe Fluent Icons" HorizontalAlignment="Left" VerticalAlignment="Center" Glyph="&#xE14D;" Margin="9,0,0,0"/>
                     <TextBlock Text="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Margin="37,0,0,0"/>

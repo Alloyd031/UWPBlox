@@ -26,7 +26,8 @@
 			HorizontalAlignment="Stretch"
 			VerticalAlignment="Stretch">
         <TextBlock Text="Are you sure you want to leave this experience?" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,118,0,0"/>
-        <Button x:Name="Leave" Content="Leave" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Margin="126,228,0,0" Click="Leave_Click">
+        <Button x:Name="Leave" Content="Leave" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Margin="126,228,0,0" Click="Leave_Click"
+                PointerEntered="Leave_PointerEntered" PointerExited="Leave_PointerExited">
             <Button.Resources>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -40,7 +41,8 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Button x:Name="DontLeave" Content="Don't Leave" BorderBrush="Transparent" CornerRadius="8" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Click="Resume_Click" Margin="416,228,0,0">
+        <Button x:Name="DontLeave" Content="Don't Leave" BorderBrush="Transparent" CornerRadius="8" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Click="DontLeave_Click" Margin="416,228,0,0"
+                PointerEntered="DontLeave_PointerEntered" PointerExited="DontLeave_PointerExited">
             <Button.Resources>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>

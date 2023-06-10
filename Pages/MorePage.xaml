@@ -15,7 +15,8 @@
         </Grid>
         <ScrollViewer Margin="0,73,0,0">
             <Grid Height="654" Width="990">
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top">
+                <Button x:Name="Marketplace" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top"
+                        PointerEntered="Marketplace_PointerEntered" PointerExited="Marketplace_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="195">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Marketplace" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -31,7 +32,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,0,0,0">
+                <Button x:Name="Premium" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,0,0,0"
+                        PointerEntered="Premium_PointerEntered" PointerExited="Premium_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEB95;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Premium" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -47,7 +49,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="398,0,0,0">
+                <Button x:Name="Profile" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="398,0,0,0"
+                        PointerEntered="Profile_PointerEntered" PointerExited="Profile_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEA8C;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Profile" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -63,7 +66,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,0,0,0">
+                <Button x:Name="Friends" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,0,0,0"
+                        PointerEntered="Friends_PointerEntered" PointerExited="Friends_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE125;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Friends" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -79,7 +83,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,0,0,0">
+                <Button x:Name="Groups" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,0,0,0"
+                        PointerEntered="Groups_PointerEntered" PointerExited="Groups_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE902;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Groups" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -95,7 +100,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,199,0,0">
+                <Button x:Name="Invertory" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,199,0,0"
+                        PointerEntered="Invertory_PointerEntered" PointerExited="Invertory_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE821;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Inventory" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -111,7 +117,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,199,0,0">
+                <Button x:Name="Messages" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,199,0,0"
+                        PointerEntered="Messages_PointerEntered" PointerExited="Messages_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE15F;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Messages" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -127,7 +134,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,199,0,0" HorizontalAlignment="Center">
+                <Button x:Name="Create" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,199,0,0" HorizontalAlignment="Center"
+                        PointerEntered="Create_PointerEntered" PointerExited="Create_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE943;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Create" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -143,7 +151,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,199,0,0">
+                <Button x:Name="Blog" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,199,0,0"
+                        PointerEntered="Blog_PointerEntered" PointerExited="Blog_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE8A1;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Blog" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -159,7 +168,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,398,0,0">
+                <Button x:Name="QuickLogIn" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,398,0,0" 
+                        PointerEntered="QuickLogIn_PointerEntered" PointerExited="QuickLogIn_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE72E;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Quick Log In" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -175,7 +185,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,398,0,0" Click="Settings_Click">
+                <Button x:Name="Settings" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="199,398,0,0" Click="Settings_Click"
+                        PointerEntered="Settings_PointerEntered" PointerExited="Settings_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE713;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Settings" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -191,7 +202,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,398,0,0" HorizontalAlignment="Center" Click="About_Click">
+                <Button x:Name="About" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,398,0,0" HorizontalAlignment="Center" Click="About_Click"
+                        PointerEntered="About_PointerEntered" PointerExited="About_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE946;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="About" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -207,7 +219,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,398,0,0">
+                <Button x:Name="OfficialStore" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="0,398,0,0"
+                        PointerEntered="OfficialStore_PointerEntered" PointerExited="OfficialStore_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7BF;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Official Store" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -223,7 +236,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,398,0,0">
+                <Button x:Name="Help" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="597,398,0,0"
+                        PointerEntered="Help_PointerEntered" PointerExited="Help_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE11B;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Help" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -239,7 +253,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,199,0,0">
+                <Button x:Name="GiftCards" Height="194" Width="194" CornerRadius="12" VerticalAlignment="Top" Margin="796,199,0,0"
+                        PointerEntered="GiftCards_PointerEntered" PointerExited="GiftCards_PointerExited">
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="194" Width="194">
                         <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF133;" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,57,0,0"/>
                         <TextBlock Text="Gift Cards" FontWeight="Normal" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,102,0,0"/>
@@ -255,7 +270,8 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button Content="Log Out" Width="640" Height="40" CornerRadius="8" FontSize="20" BorderBrush="#BCBDBE" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top">
+                <Button x:Name="LogOutButton" Content="Log Out" Width="640" Height="40" CornerRadius="8" FontSize="20" BorderBrush="#BCBDBE" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top"
+                        PointerEntered="LogOutButton_PointerEntered" PointerExited="LogOutButton_PointerExited">
                     <Button.Resources>
                         <ResourceDictionary>
                             <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
@@ -272,7 +288,8 @@
             </Grid>
         </ScrollViewer>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
-            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
+            <Button x:Name="RobuxButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
+                    PointerEntered="RobuxButton_PointerEntered" PointerExited="RobuxButton_PointerExited">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -288,7 +305,8 @@
                 </Button.Resources>
             </Button>
             <AppBarSeparator/>
-            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent">
+            <Button x:Name="NotificationsButton" Height="44" Width="44" Background="Transparent" BorderBrush="Transparent"
+                    PointerEntered="NotificationsButton_PointerEntered" PointerExited="NotificationsButton_PointerExited">
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
                 <Button.Resources>
                     <ResourceDictionary>

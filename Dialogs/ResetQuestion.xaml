@@ -26,7 +26,8 @@
 			HorizontalAlignment="Stretch"
 			VerticalAlignment="Stretch">
         <TextBlock Text="Are you sure you want to reset your character?" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,118,0,0"/>
-        <Button x:Name="Reset" Content="Reset" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Margin="126,228,0,0" Click="Reset_Click">
+        <Button x:Name="Reset" Content="Reset" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Margin="126,228,0,0" Click="Reset_Click"
+                PointerEntered="Reset_PointerEntered" PointerExited="Reset_PointerExited">
             <Button.Resources>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
@@ -40,7 +41,8 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Button x:Name="DontReset" Content="Don't Reset" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Click="DontReset_Click" Margin="416,228,0,0">
+        <Button x:Name="DontReset" Content="Don't Reset" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Click="DontReset_Click" Margin="416,228,0,0"
+                PointerEntered="DontReset_PointerEntered" PointerExited="DontReset_PointerExited">
             <Button.Resources>
                 <ResourceDictionary>
                     <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>

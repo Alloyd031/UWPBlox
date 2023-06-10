@@ -6,14 +6,15 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
-    xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+    Loaded="Page_Loaded">
 
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="56" VerticalAlignment="Top"/>
         <StackPanel x:Name="LeftItems" Orientation="Horizontal" Margin="0,6,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Padding="10,0,0,0">
-            <Button x:Name="Menu" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent" Click="Menu_Click">
+            <Button x:Name="Menu" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent" Click="Menu_Click"
+                    PointerEntered="Menu_PointerEntered" PointerExited="Menu_PointerExited">
                 <FontIcon Glyph="&#xE700;"/>
                 <Button.Resources>
                     <ResourceDictionary>
@@ -28,11 +29,12 @@
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Messages" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top">
+            <Button x:Name="Messages" Width="44" Height="44" Margin="10,0,0,0" CornerRadius="0" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top"
+                    PointerEntered="Messages_PointerEntered" PointerExited="Messages_PointerExited">
                 <FontIcon Glyph="&#xE8F2;"/>
                 <Button.Flyout>
                     <Flyout Placement="BottomEdgeAlignedLeft">
-                        <Grid Width="400" Height="265">
+                        <Grid Width="576" Height="265">
                             <TextBlock Text="Chat is currently not available." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
                             <TextBox PlaceholderText="To chat click here or press '/' key" CornerRadius="0" VerticalAlignment="Bottom"/>
                         </Grid>
@@ -42,6 +44,10 @@
                                 <Setter Property="CornerRadius" Value="0"/>
                                 <Setter Property="Background" Value="#121314"/>
                                 <Setter Property="BorderBrush" Value="#121314"/>
+                                <Setter Property="MinWidth" Value="576"/>
+                                <Setter Property="MinHeight" Value="265"/>
+                                <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Disabled"/>
+                                <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
                             </Style>
                         </Flyout.FlyoutPresenterStyle>
                     </Flyout>
@@ -61,12 +67,14 @@
             </Button>
         </StackPanel>
         <StackPanel x:Name="RightItems" Orientation="Horizontal" Margin="0,6,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,0,190,0">
-            <Button x:Name="More" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent">
+            <Button x:Name="More" Width="44" Height="44" CornerRadius="0" Background="Transparent" BorderBrush="Transparent"
+                    PointerEntered="More_PointerEntered" PointerExited="More_PointerExited">
                 <FontIcon Glyph="&#xE10C;"/>
                 <Button.Flyout>
                     <Flyout Placement="BottomEdgeAlignedRight">
                         <Grid Width="276" Background="#121314">
-                            <Button Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <Button x:Name="Leaderboard" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" VerticalAlignment="Top"
+                                    PointerEntered="Leaderboard_PointerEntered" PointerExited="Leaderboard_PointerExited">
                                 <Grid Margin="-138,-27,-138,-28">
                                     <FontIcon Glyph="&#xECA7;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
                                     <TextBlock Text="Leaderboard" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>
@@ -83,7 +91,8 @@
                                 </Button.Resources>
                             </Button>
                             <MenuFlyoutSeparator Background="White" VerticalAlignment="Top" Margin="0,52,0,0"/>
-                            <Button Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top">
+                            <Button x:Name="Emotes" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top"
+                                    PointerEntered="Emotes_PointerEntered" PointerExited="Emotes_PointerExited">
                                 <Grid Margin="-138,-27,-138,-28">
                                     <FontIcon Glyph="&#xED54;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
                                     <TextBlock Text="Emotes" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>
@@ -100,7 +109,8 @@
                                 </Button.Resources>
                             </Button>
                             <MenuFlyoutSeparator Background="White" VerticalAlignment="Top" Margin="0,107,0,0"/>
-                            <Button Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top">
+                            <Button x:Name="Invertory" Width="276" Height="55" CornerRadius="0" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top"
+                                    PointerEntered="Invertory_PointerEntered" PointerExited="Invertory_PointerExited">
                                 <Grid Margin="-138,-27,-138,-28">
                                     <FontIcon Glyph="&#xE821;" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16,0,0,0"/>
                                     <TextBlock Text="Invertory" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="50,0,0,0"/>
@@ -141,61 +151,6 @@
                 </Button.Resources>
             </Button>
         </StackPanel>
-        <Grid Margin="0,56,0,0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <Button x:Name="WelcomeButton" Background="Transparent" BorderBrush="Transparent" Height="100" Width="100" Margin="10,10,0,0" VerticalAlignment="Top">
-                <Grid Margin="-50,-50,-50,-50">
-                    <FontIcon Glyph="&#xE946;" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,33,0,0"/>
-                    <TextBlock Text="Welcome" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,62,0,0"/>
-                </Grid>
-                <Button.Resources>
-                    <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
-                    </ResourceDictionary>
-                </Button.Resources>
-            </Button>
-            <Grid x:Name="Taskbar" Height="48" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" VerticalAlignment="Bottom">
-                <Button Height="48" Width="48" Background="Transparent" BorderBrush="Transparent" ToolTipService.ToolTip="Start" HorizontalAlignment="Center">
-                    <FontIcon FontFamily="HoloLens MDL2 Assets" Glyph="&#xE782;" FontSize="20"/>
-                    <Button.Flyout>
-                        <Flyout Placement="Top">
-                            <Grid Width="726" Height="726">
-                                <TextBlock Text="Start Menu is not available. This is a simulator, not an emulator." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
-                            </Grid>
-                            <Flyout.FlyoutPresenterStyle>
-                                <Style TargetType="FlyoutPresenter">
-                                    <Setter Property="Padding" Value="0"/>
-                                    <Setter Property="CornerRadius" Value="8"/>
-                                    <Setter Property="Background" Value="#393B3D"/>
-                                    <Setter Property="BorderBrush" Value="#393B3D"/>
-                                    <Setter Property="MinWidth" Value="726"/>
-                                    <Setter Property="MinHeight" Value="726"/>
-                                    <Setter Property="ScrollViewer.HorizontalScrollMode" Value="Disabled" />
-                                    <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
-                                </Style>
-                            </Flyout.FlyoutPresenterStyle>
-                        </Flyout>
-                    </Button.Flyout>
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
-                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
-                            <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-            </Grid>
-        </Grid>
+        <Frame x:Name="GameFrame" Margin="0,56,0,0"/>
     </Grid>
 </Page>

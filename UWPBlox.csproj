@@ -137,6 +137,9 @@
     <Compile Include="GamesPages\WinSimulator.xaml.cs">
       <DependentUpon>WinSimulator.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GamesPages\WinSimulatorPages\Welcome.xaml.cs">
+      <DependentUpon>Welcome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -169,6 +172,12 @@
     </Compile>
     <Compile Include="Pages\ConnectPage.xaml.cs">
       <DependentUpon>ConnectPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Continue.xaml.cs">
+      <DependentUpon>Continue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Friends.xaml.cs">
+      <DependentUpon>Friends.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\GameInfo.xaml.cs">
       <DependentUpon>GameInfo.xaml</DependentUpon>
@@ -237,6 +246,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GamesPages\WinSimulatorPages\Welcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -278,6 +291,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ConnectPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Continue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Friends.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
