@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using UWPBlox.MorePages;
+using UWPBlox.Dialogs;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -39,6 +40,11 @@ namespace UWPBlox.Pages
         private void About_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AboutPage));
+        }
+        private async void LogOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            LogOut dialog = new LogOut();
+            await dialog.ShowAsync();
         }
     }
 }

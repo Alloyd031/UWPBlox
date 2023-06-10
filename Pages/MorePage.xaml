@@ -255,7 +255,7 @@
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button x:Name="LogOutButton" Content="Log Out" Width="640" Height="40" CornerRadius="8" FontSize="20" BorderBrush="#BCBDBE" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top">
+                <Button x:Name="LogOutButton" Content="Log Out" Width="640" Height="40" CornerRadius="8" FontSize="20" BorderBrush="#BCBDBE" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top" Click="LogOutButton_Click">
                     <Button.Resources>
                         <ResourceDictionary>
                             <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
