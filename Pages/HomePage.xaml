@@ -47,53 +47,143 @@
                 </Button.Resources>
             </Button>
         </StackPanel>
-        <ScrollViewer Margin="0,73,0,0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden">
+        <ScrollViewer Margin="0,73,0,0" HorizontalScrollBarVisibility="Hidden">
             <Grid>
-                <Grid VerticalAlignment="Top" Height="210">
-                    <TextBlock Text="Friends" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" Margin="17,13,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                    <Button x:Name="AddFriends" Background="Transparent" BorderBrush="Transparent" Height="141" Width="146" Margin="17,51,0,0" VerticalAlignment="Top" Click="AddFriends_Click">
-                        <Grid Margin="-73,-70,-73,-71">
-                            <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE125;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="Add Friends" FontWeight="Black" FontSize="17" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,112,0,0"/>
-                        </Grid>
-                        <Button.Resources>
-                            <ResourceDictionary>
-                                <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
-                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
-                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
-                            </ResourceDictionary>
-                        </Button.Resources>
-                    </Button>
-                    <TextBlock Text="You currently have no friends." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
-                    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,13,17,0">
-                        <Button x:Name="Friends_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top" Click="Friends_SeeAll_Click">
+                <ScrollViewer VerticalAlignment="Top" Height="210" VerticalScrollBarVisibility="Hidden">
+                    <Grid VerticalAlignment="Top" Height="210">
+                        <TextBlock Text="Friends" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" Margin="17,13,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Button x:Name="AddFriends" Background="Transparent" BorderBrush="Transparent" Height="141" Width="146" Margin="17,51,0,0" VerticalAlignment="Top" Click="AddFriends_Click">
+                            <Grid Margin="-73,-70,-73,-71">
+                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE125;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="Add Friends" FontWeight="Black" FontSize="17" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,112,0,0"/>
+                            </Grid>
                             <Button.Resources>
                                 <ResourceDictionary>
                                     <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="#BDBEBF"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
                                     <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FEFEFE"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
                                     <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#6F7071"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FDFEFE"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#707172"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
                                 </ResourceDictionary>
                             </Button.Resources>
                         </Button>
-                    </StackPanel>
-                </Grid>
-                <Grid VerticalAlignment="Top" Height="360" Margin="0,210,0,0">
-                    <TextBlock Text="Continue" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
-                    <Button x:Name="SomeCoolGame" Height="275" Width="194" Margin="10,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
+                        <TextBlock Text="You currently have no friends." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,13,17,0">
+                            <Button x:Name="Friends_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top" Click="Friends_SeeAll_Click">
+                                <Button.Resources>
+                                    <ResourceDictionary>
+                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForeground" Color="#BDBEBF"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FEFEFE"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#6F7071"/>
+                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FDFEFE"/>
+                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#707172"/>
+                                    </ResourceDictionary>
+                                </Button.Resources>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+                <ScrollViewer VerticalAlignment="Top" Height="360" Margin="0,210,0,0" VerticalScrollBarVisibility="Hidden">
+                    <Grid>
+                        <TextBlock Text="Continue" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
+                        <Button x:Name="Continue_SomeCoolGame" Height="275" Width="194" Margin="10,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
+                            <Grid Margin="-97,-137,-97,-138">
+                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,69,0,0"/>
+                                <TextBlock Text="Some Cool Game :3" FontWeight="Normal" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                <Button x:Name="Continue_PlayCoolGameButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayCoolGameButton_Click">
+                                    <Grid Margin="-89,-18,-88,-18">
+                                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Grid>
+                                    <Button.Resources>
+                                        <ResourceDictionary>
+                                            <SolidColorBrush x:Key="ButtonBackground" Color="#00B06F"/>
+                                            <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#00B06F"/>
+                                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#1C7656"/>
+                                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8EBBAB"/>
+                                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                                            <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                                        </ResourceDictionary>
+                                    </Button.Resources>
+                                </Button>
+                            </Grid>
+                            <Button.Resources>
+                                <ResourceDictionary>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#28292B"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#B3B3B3"/>
+                                </ResourceDictionary>
+                            </Button.Resources>
+                        </Button>
+                        <Button x:Name="Continue_WinSimulator" Height="275" Width="194" Margin="217,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
+                            <Grid Margin="-97,-137,-97,-138">
+                                <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,67,0,0"/>
+                                <TextBlock Text="WinSimulator" FontWeight="Normal" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                <Button x:Name="Continue_PlayWinSimulatorButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayWinSimulatorButton_Click">
+                                    <Grid Margin="-89,-18,-88,-18">
+                                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Grid>
+                                    <Button.Resources>
+                                        <ResourceDictionary>
+                                            <SolidColorBrush x:Key="ButtonBackground" Color="#00B06F"/>
+                                            <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#00B06F"/>
+                                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#1C7656"/>
+                                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8EBBAB"/>
+                                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                                            <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                                        </ResourceDictionary>
+                                    </Button.Resources>
+                                </Button>
+                            </Grid>
+                            <Button.Resources>
+                                <ResourceDictionary>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#28292B"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#B3B3B3"/>
+                                </ResourceDictionary>
+                            </Button.Resources>
+                        </Button>
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,13,17,0">
+                            <Button x:Name="Continue_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top" Click="Continue_SeeAll_Click">
+                                <Button.Resources>
+                                    <ResourceDictionary>
+                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForeground" Color="#BDBEBF"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FEFEFE"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#6F7071"/>
+                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FDFEFE"/>
+                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#707172"/>
+                                    </ResourceDictionary>
+                                </Button.Resources>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+                <ScrollViewer VerticalAlignment="Top" Height="360" Margin="0,570,0,0" HorizontalScrollBarVisibility="Hidden">
+                    <Grid>
+                        <TextBlock Text="Recommended For You" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
+                        <Button x:Name="RecommendedForYou_SomeCoolGame" Height="275" Width="194" Margin="10,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
                         <Grid Margin="-97,-137,-97,-138">
                             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,69,0,0"/>
                             <TextBlock Text="Some Cool Game :3" FontWeight="Normal" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <Button x:Name="PlayCoolGameButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayCoolGameButton_Click">
+                            <Button x:Name="RecommendedForYou_PlayCoolGameButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayCoolGameButton_Click">
                                 <Grid Margin="-89,-18,-88,-18">
                                     <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Grid>
@@ -122,11 +212,11 @@
                             </ResourceDictionary>
                         </Button.Resources>
                     </Button>
-                    <Button x:Name="WinSimulator" Height="275" Width="194" Margin="217,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
+                    <Button x:Name="RecommendedForYou_WinSimulator" Height="275" Width="194" Margin="217,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="WinSimulatorInfo_Click">
                         <Grid Margin="-97,-137,-97,-138">
                             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEC4E;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,67,0,0"/>
                             <TextBlock Text="WinSimulator" FontWeight="Normal" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <Button x:Name="PlayWinSimulatorButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayWinSimulatorButton_Click">
+                            <Button x:Name="RecommendedForYou_PlayWinSimulatorButton" Width="177" Height="36" CornerRadius="8" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Click="PlayWinSimulatorButton_Click">
                                 <Grid Margin="-89,-18,-88,-18">
                                     <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xF5B0;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Grid>
@@ -155,23 +245,24 @@
                             </ResourceDictionary>
                         </Button.Resources>
                     </Button>
-                    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,13,17,0">
-                        <Button x:Name="Continue_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top" Click="Continue_SeeAll_Click">
-                            <Button.Resources>
-                                <ResourceDictionary>
-                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForeground" Color="#BDBEBF"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FEFEFE"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#6F7071"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FDFEFE"/>
-                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#707172"/>
-                                </ResourceDictionary>
-                            </Button.Resources>
-                        </Button>
-                    </StackPanel>
-                </Grid>
+                        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Right" Padding="0,13,17,0">
+                            <Button x:Name="RecommendedForYou_SeeAll" Content="See All" Width="64" Height="28" CornerRadius="8" FontSize="12" BorderBrush="#BCBDBE" VerticalAlignment="Top" Click="RecommendedForYou_SeeAll_Click">
+                                <Button.Resources>
+                                    <ResourceDictionary>
+                                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForeground" Color="#BDBEBF"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FEFEFE"/>
+                                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#6F7071"/>
+                                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FDFEFE"/>
+                                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#707172"/>
+                                    </ResourceDictionary>
+                                </Button.Resources>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
             </Grid>
         </ScrollViewer>
     </Grid>

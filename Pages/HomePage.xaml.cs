@@ -105,5 +105,9 @@ namespace UWPBlox.Pages
         {
             this.Frame.Navigate(typeof(Continue));
         }
+        private void RecommendedForYou_SeeAll_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(RecommendedForYou));
+        }
     }
 }
