@@ -14,14 +14,7 @@
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="32" VerticalAlignment="Top">
             <TextBlock Text="Sign Up" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="77,0,0,0"/>
         </Grid>
-        <Button
-					x:Name="BackButton"
-					Width="49"
-					Height="32"
-					AutomationProperties.Name="Back"
-					Background="Transparent"
-					BorderBrush="Transparent"
-					Click="BackButton_Click" VerticalAlignment="Top">
+        <Button x:Name="BackButton" Width="46" Height="32" AutomationProperties.Name="Back" Background="Transparent" BorderBrush="Transparent" Click="BackButton_Click" VerticalAlignment="Top">
             <muxc:AnimatedIcon x:Name="BackAnimatedIcon">
                 <muxc:AnimatedIcon.Source>
                     <animatedvisuals:AnimatedBackVisualSource/>
