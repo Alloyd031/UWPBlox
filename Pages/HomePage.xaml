@@ -7,11 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    Background="#232527">
 
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
-            <TextBlock Text="Home" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0"/>
+            <TextBlock Text="Home" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0"/>
         </Grid>
         <AutoSuggestBox PlaceholderText="Search" QueryIcon="Find" VerticalContentAlignment="Center" Background="#151618" Foreground="White" CornerRadius="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="15" HorizontalAlignment="Center" Width="400" Height="36" Margin="0,19,0,0"/>
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal" Padding="0,0,190,0" Margin="0,15,0,0">
@@ -51,7 +51,7 @@
             <Grid>
                 <ScrollViewer VerticalAlignment="Top" Height="210" VerticalScrollBarVisibility="Hidden">
                     <Grid VerticalAlignment="Top" Height="210">
-                        <TextBlock Text="Friends" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" Margin="17,13,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <TextBlock Text="Friends" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" Margin="17,13,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                         <Button x:Name="AddFriends" Background="Transparent" BorderBrush="Transparent" Height="141" Width="146" Margin="17,51,0,0" VerticalAlignment="Top" Click="AddFriends_Click">
                             <Grid Margin="-73,-70,-73,-71">
                                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE125;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -91,7 +91,7 @@
                 </ScrollViewer>
                 <ScrollViewer VerticalAlignment="Top" Height="360" Margin="0,210,0,0" VerticalScrollBarVisibility="Hidden">
                     <Grid>
-                        <TextBlock Text="Continue" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
+                        <TextBlock Text="Continue" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
                         <Button x:Name="Continue_SomeCoolGame" Height="275" Width="194" Margin="10,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
                             <Grid Margin="-97,-137,-97,-138">
                                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,69,0,0"/>
@@ -178,7 +178,7 @@
                 </ScrollViewer>
                 <ScrollViewer VerticalAlignment="Top" Height="360" Margin="0,570,0,0" HorizontalScrollBarVisibility="Hidden">
                     <Grid>
-                        <TextBlock Text="Recommended For You" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
+                        <TextBlock Text="Recommended For You" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
                         <Button x:Name="RecommendedForYou_SomeCoolGame" Height="275" Width="194" Margin="10,61,0,0" CornerRadius="8" VerticalAlignment="Top" Click="SomeCoolGameInfo_Click">
                         <Grid Margin="-97,-137,-97,-138">
                             <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7FC;" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,69,0,0"/>

@@ -31,14 +31,14 @@
         <Button x:Name="OKButton" Content="OK" CornerRadius="8" BorderBrush="Transparent" Width="70" Height="44" FontSize="20" Click="OKButton_Click" Margin="370,196,0,0" VerticalAlignment="Top">
             <Button.Resources>
                 <ResourceDictionary>
-                    <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
-                    <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#32B5FF"/>
-                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
-                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
-                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#9C9D9E"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#4E4E4F"/>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#9C9D9E"/>
+                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#4E4E4F"/>
+                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#9C9D9E"/>
+                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#9C9D9E"/>
                 </ResourceDictionary>
             </Button.Resources>
         </Button>

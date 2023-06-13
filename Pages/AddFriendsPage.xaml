@@ -8,11 +8,11 @@
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    Background="#232527">
 
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
-            <TextBlock Text="Add Friends" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
+            <TextBlock Text="Add Friends" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
         </Grid>
         <Button
 					x:Name="BackButton"
@@ -45,8 +45,8 @@
             </Button.Resources>
         </Button>
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-            <FontIcon Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBlock Text="This page is not available." Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
+            <FontIcon Glyph="&#xEA39;" Foreground="White" FontSize="90" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Text="This page is not available." Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,95,0,0"/>
         </Grid>
     </Grid>
 </Page>

@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+    Background="#222222"
     Width="800"
     Height="570">
 
@@ -30,6 +30,6 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <TextBlock Text="You currently have no friends." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
+        <TextBlock Text="You currently have no friends." Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
     </Grid>
 </Page>

@@ -7,12 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    Background="#232527">
 
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
-            <TextBlock Text="Discover" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
+            <TextBlock Text="Discover" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,13,0,0"/>
         </Grid>
+        <AutoSuggestBox PlaceholderText="Search" QueryIcon="Find" VerticalContentAlignment="Center" Background="#151618" Foreground="White" CornerRadius="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="15" HorizontalAlignment="Center" Width="400" Height="36" Margin="0,19,0,0"/>
         <ScrollViewer Margin="0,73,0,0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden">
             <Grid x:Name="GamesGrid">
                 <Grid VerticalAlignment="Top" Height="268">
@@ -51,7 +52,7 @@
                             </Button.Resources>
                         </Button>
                     </StackPanel>
-                    <TextBlock Text="No games here." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
+                    <TextBlock Text="No games here." Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
                     <StackPanel HorizontalAlignment="Right" Padding="0,0,10,0">
                         <Button x:Name="MostEngagingNextButton" Margin="0,63,0,0" Background="Transparent" BorderBrush="Transparent" Height="195" VerticalAlignment="Top">
                             <FontIcon Glyph="&#xE111;" HorizontalAlignment="Center" VerticalAlignment="Center"/>

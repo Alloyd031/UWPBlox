@@ -7,12 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    Background="#222222">
 
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="32" VerticalAlignment="Top"/>
         <Grid Width="474" HorizontalAlignment="Center" VerticalAlignment="Center" Height="250">
-            <TextBlock Text="UWPBlox" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Text="UWPBlox" Foreground="White" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Button x:Name="SignUp" Content="Sign Up" Width="360" Height="48" CornerRadius="8" FontSize="20" BorderBrush="White" VerticalAlignment="Top" Margin="0,100,0,0" HorizontalAlignment="Center" Click="SignUp_Click">
                 <Button.Resources>
                     <ResourceDictionary>
@@ -41,7 +41,7 @@
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
-            <HyperlinkButton Content="Terms" Margin="166,208,0,0" Foreground="#52ADF4" VerticalAlignment="Top">
+            <HyperlinkButton Content="Terms" FontSize="20" Padding="0,0,0,0" Margin="163,216,0,0" Foreground="#52ADF4" VerticalAlignment="Top">
                 <HyperlinkButton.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="HyperlinkButtonBackgroundPointerOver" Color="Transparent"/>
@@ -51,8 +51,8 @@
                     </ResourceDictionary>
                 </HyperlinkButton.Resources>
             </HyperlinkButton>
-            <TextBlock Text="-" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Margin="0,201,0,0"/>
-            <HyperlinkButton Content="Privacy" Margin="247,208,0,0" Foreground="#52ADF4" VerticalAlignment="Top">
+            <TextBlock Text="-" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Margin="0,210,0,0"/>
+            <HyperlinkButton Content="Privacy" Padding="0,0,0,0" FontSize="20" Margin="256,216,0,0" Foreground="#52ADF4" VerticalAlignment="Top">
                 <HyperlinkButton.Resources>
                     <ResourceDictionary>
                         <SolidColorBrush x:Key="HyperlinkButtonBackgroundPointerOver" Color="Transparent"/>

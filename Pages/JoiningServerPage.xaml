@@ -7,20 +7,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
-    Loaded="Page_Loaded">
+    Loaded="Page_Loaded"
+    Background="#222222">
 
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="32" VerticalAlignment="Top"/>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <FontIcon x:Name="GameIcon" x:FieldModifier="public" FontFamily="Segoe Fluent Icons" Glyph="&#xE18A;" FontSize="400"/>
-            <TextBlock x:Name="GameName" x:FieldModifier="public" Text="GameName" FontWeight="Black" FontSize="100" Padding="0,0,0,0"/>
-        </StackPanel>
-        <Grid VerticalAlignment="Bottom" Height="60">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <muxc:ProgressRing x:Name="JoinServerProgress" Height="44" Width="44" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                <TextBlock Text="Joining server" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" Padding="24,0,0,0"/>
+            <FontIcon x:Name="GameIcon" x:FieldModifier="public" Foreground="White" FontFamily="Segoe Fluent Icons" Glyph="&#xE18A;" FontSize="400" Margin="0,0,0,10"/>
+            <TextBlock x:Name="GameName" x:FieldModifier="public" Foreground="White" Text="GameName" FontWeight="Black" FontSize="100" Margin="0,10,0,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
+                <muxc:ProgressRing x:Name="JoinServerProgress" Height="60" Width="60" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,20,0"/>
+                <TextBlock Text="Joining server" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontSize="40" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="20,0,0,0"/>
             </StackPanel>
-        </Grid>
+        </StackPanel>
     </Grid>
 </Page>

@@ -7,12 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    Background="#222222">
 
     <Grid>
         <Grid Width="1024" Height="768" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Text="Welcome!" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0"/>
-            <TextBlock Text="Select your favorite OS!" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,120,0,0"/>
+            <TextBlock Text="Welcome!" Foreground="White" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+            <TextBlock Text="Select your favorite OS!" Foreground="White"  FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,120,0,0"/>
             <Button x:Name="WinXP" Content="Windows XP" FontSize="30" BorderBrush="Transparent" HorizontalAlignment="Center" Margin="0,248,0,0" VerticalAlignment="Top" Width="350">
                 <Button.Resources>
                     <ResourceDictionary>

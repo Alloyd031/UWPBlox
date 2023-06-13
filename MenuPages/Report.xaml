@@ -7,11 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
+    Background="#222222"
     Width="800"
     Height="570">
 
     <Grid>
-        <TextBlock Text="Reporting is not possible at this time." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+        <TextBlock Text="Reporting is not possible at this time." Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
     </Grid>
 </Page>

@@ -8,11 +8,11 @@
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
     mc:Ignorable="d"
-    muxc:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    Background="#232527">
 
     <Grid>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
-            <TextBlock Text="Most Engaging" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
+            <TextBlock Text="Most Engaging" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="77,0,0,0"/>
         </Grid>
         <Button
 					x:Name="BackButton"
@@ -42,6 +42,6 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <TextBlock Text="No games here." VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40"/>
+        <TextBlock Text="No games here." Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="40"/>
     </Grid>
 </Page>
