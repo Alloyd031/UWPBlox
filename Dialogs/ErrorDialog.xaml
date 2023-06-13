@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    CornerRadius="8"
+    CornerRadius="0"
     Background="#222222"
     Foreground="White"
     BorderBrush="#222222">
@@ -20,27 +20,35 @@
 
     <Grid
 			x:Name="ContainerGrid"
-		    Width="450"
-			Height="250"
+		    Width="400"
+			Height="188"
 			HorizontalAlignment="Stretch"
 			VerticalAlignment="Stretch">
-        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-            <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEA39;" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBlock Text="NOT_IMPLEMENTED" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,65,0,0"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Error" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <MenuFlyoutSeparator HorizontalAlignment="Center" VerticalAlignment="Top" Width="361" Background="#BDBEBE" Margin="0,48,0,0"/>
+        <Grid Grid.Row="1">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,12,0,0">
+                <TextBlock Text="This feature is not available." Foreground="#BDBEBE" FontSize="17" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBlock Text="(Error Code: NOT_IMPLEMENTED)" Foreground="#BDBEBE" FontSize="17" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </StackPanel>
+            <Button x:Name="OKButton" Content="OK" CornerRadius="8" BorderBrush="White" Width="360" Height="44" FontSize="20" Click="OKButton_Click" Margin="0,78,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="White"/>
+                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="White"/>
+                    </ResourceDictionary>
+                </Button.Resources>
+            </Button>
         </Grid>
-        <Button x:Name="OKButton" Content="OK" CornerRadius="8" BorderBrush="Transparent" Width="70" Height="44" FontSize="20" Click="OKButton_Click" Margin="370,196,0,0" VerticalAlignment="Top">
-            <Button.Resources>
-                <ResourceDictionary>
-                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
-                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
-                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#9C9D9E"/>
-                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#4E4E4F"/>
-                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#9C9D9E"/>
-                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#4E4E4F"/>
-                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#9C9D9E"/>
-                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#9C9D9E"/>
-                </ResourceDictionary>
-            </Button.Resources>
-        </Button>
     </Grid>
 </ContentDialog>
