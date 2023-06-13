@@ -7,17 +7,69 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    Loaded="Page_Loaded"
-    Background="#222222">
+    Loaded="Page_Loaded">
 
     <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Dark">
+                        <Color x:Key="SystemAltHighColor">#232527</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Light">
+                        <Color x:Key="SystemAltHighColor">#F2F4F5</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary>
+        </Grid.Resources>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="32" VerticalAlignment="Top"/>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <FontIcon x:Name="GameIcon" x:FieldModifier="public" Foreground="White" FontFamily="Segoe Fluent Icons" Glyph="&#xE18A;" FontSize="400" Margin="0,0,0,10"/>
-            <TextBlock x:Name="GameName" x:FieldModifier="public" Foreground="White" Text="GameName" FontWeight="Black" FontSize="100" Margin="0,10,0,0"/>
+            <FontIcon x:Name="GameIcon" x:FieldModifier="public" FontFamily="Segoe Fluent Icons" Glyph="&#xE18A;" FontSize="400" Margin="0,0,0,10">
+                <FontIcon.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </FontIcon.Resources>
+            </FontIcon>
+            <TextBlock x:Name="GameName" x:FieldModifier="public" Text="GameName" FontWeight="Black" FontSize="100" Margin="0,10,0,0">
+                <TextBlock.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </TextBlock.Resources>
+            </TextBlock>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50,0,0">
                 <muxc:ProgressRing x:Name="JoinServerProgress" Height="60" Width="60" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,20,0"/>
-                <TextBlock Text="Joining server" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontSize="40" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="20,0,0,0"/>
+                <TextBlock Text="Joining server" Style="{StaticResource CaptionTextBlockStyle}" FontSize="40" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="20,0,0,0">
+                    <TextBlock.Resources>
+                        <ResourceDictionary>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="Foreground" Color="White"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
+                        </ResourceDictionary>
+                    </TextBlock.Resources>
+                </TextBlock>
             </StackPanel>
         </StackPanel>
     </Grid>

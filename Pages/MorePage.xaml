@@ -6,12 +6,38 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
-    mc:Ignorable="d"
-    Background="#232527">
+    mc:Ignorable="d">
 
     <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Dark">
+                        <Color x:Key="SystemAltHighColor">#232527</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Light">
+                        <Color x:Key="SystemAltHighColor">#F2F4F5</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary>
+        </Grid.Resources>
         <Grid x:Name="AppTitleBar" Background="Transparent" Height="73" VerticalAlignment="Top">
-            <TextBlock Text="More" Foreground="White" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0"/>
+            <TextBlock Text="More" Style="{StaticResource CaptionTextBlockStyle}" FontWeight="Black" FontSize="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0">
+                <TextBlock.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </TextBlock.Resources>
+            </TextBlock>
         </Grid>
         <ScrollViewer Margin="0,73,0,0">
             <Grid Height="654" Width="990">
@@ -22,12 +48,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -38,12 +82,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -54,12 +116,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -70,12 +150,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -86,12 +184,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -102,12 +218,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -118,12 +252,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -134,12 +286,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -150,12 +320,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -166,12 +354,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -182,12 +388,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -198,12 +422,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -214,12 +456,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -230,12 +490,30 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -246,26 +524,60 @@
                     </Grid>
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#C4C5C5"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#2E3032"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#77787A"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#4C4E50"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#2E3032"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#606162"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#F9FAFA"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#ACADAE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#E6E6E6"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#F9FAFA"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
-                <Button x:Name="LogOutButton" Content="Log Out" Width="640" Height="40" CornerRadius="8" FontSize="20" BorderBrush="#BCBDBE" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top" Click="LogOutButton_Click">
+                <Button x:Name="LogOutButton" Content="Log Out" Width="640" Height="40" CornerRadius="8" FontSize="20" HorizontalAlignment="Center" Margin="0,614,0,0" VerticalAlignment="Top" Click="LogOutButton_Click">
                     <Button.Resources>
                         <ResourceDictionary>
-                            <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                            <SolidColorBrush x:Key="ButtonForeground" Color="#BDBEBF"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FEFEFE"/>
-                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#6F7071"/>
-                            <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FDFEFE"/>
-                            <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#707172"/>
+                            <ResourceDictionary.ThemeDictionaries>
+                                <ResourceDictionary x:Key="Dark">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#BCBDBE"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#BDBEBF"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#FEFEFE"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#6F7071"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#FDFEFE"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#707172"/>
+                                </ResourceDictionary>
+                                <ResourceDictionary x:Key="Light">
+                                    <SolidColorBrush x:Key="ButtonBorderBrush" Color="#7B7C7C"/>
+                                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonForeground" Color="#797A7A"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#393B3D"/>
+                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#B5B7B7"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#3C3E40"/>
+                                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B6B8B8"/>
+                                </ResourceDictionary>
+                            </ResourceDictionary.ThemeDictionaries>
                         </ResourceDictionary>
                     </Button.Resources>
                 </Button>
@@ -276,14 +588,28 @@
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE14D;"/>
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8E8D87"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
@@ -292,14 +618,28 @@
                 <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE7E7;"/>
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8C8D8E"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#8E8D87"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>

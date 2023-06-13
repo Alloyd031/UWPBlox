@@ -6,10 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    CornerRadius="8"
-    Background="#222222"
-    Foreground="White"
-    BorderBrush="#222222">
+    CornerRadius="0">
 
     <ContentDialog.Resources>
         <ResourceDictionary>
@@ -18,41 +15,115 @@
         </ResourceDictionary>
     </ContentDialog.Resources>
 
-    <Grid
-			x:Name="ContainerGrid"
-		    Width="400"
-			Height="214"
-			HorizontalAlignment="Stretch"
-			VerticalAlignment="Stretch">
-        <TextBlock Text="Log Out" Style="{StaticResource CaptionTextBlockStyle}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0"/>
-        <TextBlock Text="Are you sure you want to log out?" Style="{StaticResource CaptionTextBlockStyle}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="CancelButton" Content="Cancel" Width="175" Height="36" CornerRadius="8" FontSize="17" BorderBrush="#C3C3C4" VerticalAlignment="Top" Margin="19,168,0,0" Click="CancelButton_Click">
-            <Button.Resources>
+    <Grid x:Name="ContainerGrid" Width="400" Height="214" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="51"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Dark">
+                        <Color x:Key="SystemAltHighColor">#393B3D</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Light">
+                        <Color x:Key="SystemAltHighColor">#EFF2F5</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <TextBlock Text="Log Out" Style="{StaticResource CaptionTextBlockStyle}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock.Resources>
                 <ResourceDictionary>
-                    <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
-                    <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
-                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
-                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#7B7C7E"/>
-                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
-                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#7E7F81"/>
-                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#7B7C7E"/>
-                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#7B7C7E"/>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Dark">
+                            <SolidColorBrush x:Key="Foreground" Color="White"/>
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
                 </ResourceDictionary>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="LogOutButton" Content="Log Out" Width="175" Height="36" CornerRadius="8" FontSize="17" BorderBrush="White" VerticalAlignment="Top" Margin="206,168,0,0" Click="LogOutButton_Click">
-            <Button.Resources>
-                <ResourceDictionary>
-                    <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
-                    <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
-                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#9C9D9E"/>
-                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#4E4E4F"/>
-                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#9C9D9E"/>
-                    <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#4E4E4F"/>
-                    <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#9C9D9E"/>
-                    <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#9C9D9E"/>
-                </ResourceDictionary>
-            </Button.Resources>
-        </Button>
+            </TextBlock.Resources>
+        </TextBlock>
+        <MenuFlyoutSeparator HorizontalAlignment="Center" VerticalAlignment="Top" Width="361" Background="#BDBEBE" Margin="0,48,0,0"/>
+        <Grid Grid.Row="1">
+            <TextBlock Text="Are you sure you want to log out?" Style="{StaticResource CaptionTextBlockStyle}" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,40,0,0">
+                <TextBlock.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </TextBlock.Resources>
+            </TextBlock>
+            <Button x:Name="CancelButton" Content="Cancel" Width="175" Height="36" CornerRadius="8" FontSize="17" VerticalAlignment="Top" Margin="18,117,0,0" Click="CancelButton_Click">
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="#C2C3C4"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="#C4C5C5"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#7B7C7E"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#7E7F81"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#7B7C7E"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#7B7C7E"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="#78797B"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#B3B5B7"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="Transparent"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#B3B5B7"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#B4B6B8"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#B4B6B8"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="LogOutButton" Content="Log Out" Width="175" Height="36" CornerRadius="8" FontSize="17" VerticalAlignment="Top" Click="LogOutButton_Click" Margin="206,117,0,0">
+                <Button.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#4E4E4F"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#4E4E4F"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#9C9D9E"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#BBBCBD"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#BBBCBD"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#77797A"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </Button.Resources>
+            </Button>
+        </Grid>
     </Grid>
 </ContentDialog>
