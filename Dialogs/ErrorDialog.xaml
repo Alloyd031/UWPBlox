@@ -80,12 +80,12 @@
                                 <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
                                 <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
                                 <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
-                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#9C9D9E"/>
-                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#4E4E4F"/>
-                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#9C9D9E"/>
-                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#4E4E4F"/>
-                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#9C9D9E"/>
-                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="White"/>
                             </ResourceDictionary>
                             <ResourceDictionary x:Key="Light">
                                 <SolidColorBrush x:Key="ButtonBorderBrush" Color="Black"/>
