@@ -50,7 +50,7 @@
                 </ResourceDictionary>
             </TextBlock.Resources>
         </TextBlock>
-        <Button x:Name="Leave" Content="Leave" CornerRadius="8" BorderBrush="Transparent" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Margin="126,228,0,0" Click="Leave_Click">
+        <Button x:Name="Leave" Content="Leave" CornerRadius="8" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Margin="126,228,0,0" Click="Leave_Click">
             <Button.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.ThemeDictionaries>
@@ -80,7 +80,7 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Button x:Name="DontLeave" Content="Don't Leave" BorderBrush="Transparent" CornerRadius="8" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Click="DontLeave_Click" Margin="416,228,0,0">
+        <Button x:Name="DontLeave" Content="Don't Leave" CornerRadius="8" Width="252" Height="62" FontSize="24" VerticalAlignment="Top" Click="DontLeave_Click" Margin="416,228,0,0">
             <Button.Resources>
                 <ResourceDictionary>
                     <ResourceDictionary.ThemeDictionaries>
