@@ -6,44 +6,140 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
-    mc:Ignorable="d"
-    Background="#222222"
     Width="800"
     Height="570">
 
     <Grid>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Dark">
+                        <Color x:Key="SystemAltHighColor">#222222</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Light">
+                        <Color x:Key="SystemAltHighColor">#EFF2F5</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary>
+        </Grid.Resources>
         <Grid VerticalAlignment="Top">
-            <TextBlock Text="Screenshot" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="10,10,0,0"/>
-            <TextBlock Text="By clicking the 'Take Screenshot' button, the menu will close and take a screenshot and save it to your computer." Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="25" Margin="0,55,0,0" Width="781"/>
-            <Button x:Name="TakeScreenshotButton" Content="Take Screenshot" CornerRadius="8" BorderBrush="Transparent" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top">
+            <TextBlock Text="Screenshot" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="10,10,0,0">
+                <TextBlock.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </TextBlock.Resources>
+            </TextBlock>
+            <TextBlock Text="By clicking the 'Take Screenshot' button, the menu will close and take a screenshot and save it to your computer." HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="25" Margin="0,55,0,0" Width="781">
+                <TextBlock.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </TextBlock.Resources>
+            </TextBlock>
+            <Button x:Name="TakeScreenshotButton" Content="Take Screenshot" CornerRadius="8" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top">
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
-                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#32B5FF"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#4E4E4F"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#4E4E4F"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#9C9D9E"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#BBBCBD"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#BBBCBD"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#77797A"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>
         </Grid>
         <Grid VerticalAlignment="Top" Margin="0,187,0,0">
-            <TextBlock Text="Video" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="10,10,0,0"/>
-            <TextBlock Text="By clicking the 'Record Video' button, the menu will close and start recording your screen." Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="25" Margin="0,55,0,0" Width="781"/>
-            <Button x:Name="RecordVideoButton" Content="Record Video" CornerRadius="8" BorderBrush="Transparent" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top">
+            <TextBlock Text="Video" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="30" Margin="10,10,0,0">
+                <TextBlock.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </TextBlock.Resources>
+            </TextBlock>
+            <TextBlock Text="By clicking the 'Record Video' button, the menu will close and start recording your screen." HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" FontSize="25" Margin="0,55,0,0" Width="781">
+                <TextBlock.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </TextBlock.Resources>
+            </TextBlock>
+            <Button x:Name="RecordVideoButton" Content="Record Video" CornerRadius="8" Width="292" Height="36" Margin="496,146,0,0" FontSize="18" VerticalAlignment="Top">
                 <Button.Resources>
                     <ResourceDictionary>
-                        <SolidColorBrush x:Key="ButtonBackground" Color="#4E5460"/>
-                        <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#32B5FF"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#32B5FF"/>
-                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="Transparent"/>
-                        <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Transparent"/>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#4E4E4F"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#4E4E4F"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#9C9D9E"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#9C9D9E"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="ButtonBorderBrush" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonBackground" Color="Black"/>
+                                <SolidColorBrush x:Key="ButtonForeground" Color="White"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#BBBCBD"/>
+                                <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#BBBCBD"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPointerOver" Color="#77797A"/>
+                                <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="#77797A"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>

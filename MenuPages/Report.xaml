@@ -7,11 +7,39 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
-    Background="#222222"
     Width="800"
     Height="570">
 
     <Grid>
-        <TextBlock Text="Reporting is not possible at this time." Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+        <Grid.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.ThemeDictionaries>
+                    <ResourceDictionary x:Key="Dark">
+                        <Color x:Key="SystemAltHighColor">#222222</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                    <ResourceDictionary x:Key="Light">
+                        <Color x:Key="SystemAltHighColor">#EFF2F5</Color>
+                        <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="{ThemeResource SystemAltHighColor}"/>
+                    </ResourceDictionary>
+                </ResourceDictionary.ThemeDictionaries>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Reporting is not possible at this time." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30">
+                <TextBlock.Resources>
+                    <ResourceDictionary>
+                        <ResourceDictionary.ThemeDictionaries>
+                            <ResourceDictionary x:Key="Dark">
+                                <SolidColorBrush x:Key="Foreground" Color="White"/>
+                            </ResourceDictionary>
+                            <ResourceDictionary x:Key="Light">
+                                <SolidColorBrush x:Key="Foreground" Color="Black"/>
+                            </ResourceDictionary>
+                        </ResourceDictionary.ThemeDictionaries>
+                    </ResourceDictionary>
+                </TextBlock.Resources>
+            </TextBlock>
+        </Grid>
     </Grid>
 </Page>
