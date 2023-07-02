@@ -301,7 +301,7 @@
                 </ResourceDictionary>
             </Button.Resources>
         </Button>
-        <Button x:Name="MoreButton" Width="44" Height="44" BorderBrush="Transparent" CornerRadius="8" Margin="564,423,0,0" VerticalAlignment="Top">
+        <Button x:Name="MoreButton" Width="44" Height="44" CornerRadius="8" Margin="564,423,0,0" VerticalAlignment="Top">
             <FontIcon FontFamily="Segoe Fluent Icons" FontSize="16" Glyph="&#xE10C;" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Button.Flyout>
                 <Flyout Placement="BottomEdgeAlignedRight">
